@@ -1,0 +1,57 @@
+general {
+	output_format = "i3bar"
+	colors = true
+  color_good = "#98971a"
+  color_degraded = "#fabd2f"
+  color_bad = "#fb4934"
+  color_separator = "#a89984"
+  markup = "pango"
+	interval = 1
+}
+
+order += "time"
+order += "path_exists VPN"
+order += "load"
+order += "disk /"
+order += "memory"
+order += "battery 1"
+order += "ethernet _first_"
+
+time {
+  format = "%a %b %_d %l:%M:%S %p"
+}
+
+path_exists VPN {
+  # path exists when a VPN tunnel launched by nmcli/nm-applet is active
+  path = "/proc/sys/net/ipv4/conf/tun0"
+  format_down = ""
+  format = "<span size='xx-large'></span>"
+}
+
+load {
+  format = "<span size='xx-small'>%1min </span><span size='xx-large'></span>"
+}
+
+disk "/" {
+  format = "<span size='xx-small'>%percentage_used_of_avail </span><span size='xx-large'></span>"
+}
+
+memory {
+  format = "<span size='xx-small'>%available </span><span size='xx-large'></span>"
+}
+
+battery 1 {
+  format = "<span size='xx-small'>%remaining </span><span size='xx-large'>%status</span>"
+  format_down = ""
+  status_chr = ""
+  status_bat = ""
+  status_unk = ""
+  status_full = ""
+  low_threshold = 5
+  threshold_type = percentage
+}
+
+ethernet _first_ {
+  format_up = "<span size='xx-small'>%ip </span><span size='xx-large' font='CaskaydiaCove Nerd Font Mono'></span>"
+  format_down = ""
+}
