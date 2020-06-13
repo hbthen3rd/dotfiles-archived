@@ -183,6 +183,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # Open applications on specific workspaces
 assign [class="firefox"] $ws2
 assign [class="Chromium"] $ws2
+assign [class="Epiphany"] $ws2
 assign [class="Pcmanfm"] $ws3
 
 # Open specific applications in floating mode
