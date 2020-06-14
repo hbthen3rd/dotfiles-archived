@@ -61,7 +61,7 @@ _There's still a lot of work to be done (conky, nvim, i3 config clean up, etc.)_
 ## Browsers
 
 - [qutebrowser](https://qutebrowser.org/doc/install.html) (WebKit) - lightweight browser for dev testing (no extension/add-on) - not assigned to any workspace
-- Firefox (Gecko) - CSS devtools + main browser for browsing - assigned to workspace 2
-  - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-- Chromium (Blink) - JavaScript devtools - assigned to workspace 2
+- Chromium (Blink) - JavaScript devtools + main browser for browsing - assigned to workspace 2
   - [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+- Firefox (Gecko) - CSS devtools - assigned to workspace 2
+  - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
