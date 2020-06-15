@@ -327,7 +327,7 @@ exec_always --no-startup-id xsetroot -solid '#3c3836'
 #############################
 
 # Set inner/outer gaps
-gaps outer 32
+gaps outer 24
 gaps inner 16
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
