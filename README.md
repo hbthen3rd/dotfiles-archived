@@ -58,6 +58,7 @@ _There's still a lot of work to be done (conky, nvim, i3 config clean up, etc.)_
   - `python3`, `pip3`, `pynvim (pip3)`
   - `ruby`, `gem`, `neovim (gem)`
   - `node`, `npm`, `neovim (npm)`
+  - `yarn` classic (v1.x) - for coc.nvim and prettier
   - Run `:checkhealth` in `nvim` before using the `init.vim` file
 
 ## Browsers
