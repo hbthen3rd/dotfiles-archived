@@ -51,6 +51,8 @@ _There's still a lot of work to be done (conky, nvim, i3 config clean up, etc.)_
 ### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-package)
 
 - Plugin manager: [vim-plug](https://github.com/junegunn/vim-plug#neovim)
+- Language server: [coc.nvim](https://github.com/neoclide/coc.nvim#quick-start)
+  - Run [.config/nvim/setup-coc.sh](/.config/nvim/setup-coc.sh) to install all the coc extensions
 - Misc:
   - `python2`, `pip2`, `pynvim (pip2)`
   - `python3`, `pip3`, `pynvim (pip3)`
