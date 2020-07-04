@@ -1,3 +1,4 @@
+rofi.dpi:                     150
 rofi.modi:                    combi
 rofi.combi-modi:              drun,window
 rofi.combi-hide-mode-prefix:  true
