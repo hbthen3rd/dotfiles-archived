@@ -16,7 +16,7 @@ Plug 'vim-scripts/CSApprox'
 Plug 'Raimondi/delimitMate'
 Plug 'majutsushi/tagbar'
 Plug 'Yggdroot/indentLine'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 if isdirectory('/usr/local/opt/fzf')
@@ -43,22 +43,24 @@ Plug 'gorodinskiy/vim-coloresque'
 Plug 'tpope/vim-haml'
 Plug 'mattn/emmet-vim'
 
-" javascript
-"" Javascript Bundle
-Plug 'jelera/vim-javascript-syntax'
-
 " php
 "" PHP Bundle
 Plug 'arnaud-lb/vim-php-namespace'
 
-" python
-"" Python Bundle
-Plug 'davidhalter/jedi-vim'
-Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+" javascript
+"" Javascript Bundle
+Plug 'jelera/vim-javascript-syntax'
 
 " typescript
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
+
+" python
+"" Python Bundle
+Plug 'davidhalter/jedi-vim'
+
+" requirements files
+Plug 'raimon49/requirements.txt.vim', { 'for': 'requirements' }
 
 call plug#end()
 
