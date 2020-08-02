@@ -306,28 +306,29 @@ bar {
 	strip_workspace_numbers yes
   
   colors {
-	  background #504945DF
-	  statusline #d5c4a1DF
-	  separator #3c3836DF
-	  focused_workspace #3c3836DF #32302fDF #fabd2fDF
-	  active_workspace #3c3836DF #504945DF #d5c4a1DF
-	  inactive_workspace #3c3836DF #504945DF #d5c4a1DF
-	  urgent_workspace   #7c6f64DF #fabd2fDF #3c3836DF
+	  background #282828df
+	  statusline #ebdbb2df
+	  separator #a89984df
+
+    # colorclass        border     background text
+	  focused_workspace   #282828df  #1d2021df  #8ec07cdf
+	  active_workspace    #1d2021df  #1d2021df  #689d6adf
+	  inactive_workspace  #32302fdf  #32302fdf  #ebdbb2df
+	  urgent_workspace    #8ec07cdf  #8ec07cdf  #1d2021df
   }
 }
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
-# Theme colors
-# class                 border    backgr.   text      indicator
-client.focused          #3c3836DF #32302fDF #fabd2fDF #fabd2fDF
-client.focused_inactive #3c3836DF #504945DF #d5c4a1DF #504945DF
-client.unfocused        #3c3836DF #504945DF #d5c4a1DF #504945DF
-client.urgent           #7c6f64DF #fabd2fDF #3c3836DF #fabd2fDF
+# colorclass             border     background text       indicator
+client.focused           #282828df  #1d2021df  #ebdbb2df  #8ec07cdf
+client.focused_inactive  #1d2021df  #1d2021df  #d5c4a1df  #689d6adf
+client.unfocused         #32302fdf  #32302fdf  #a89984df  #32302fdf
+client.urgent            #8ec07cdf  #8ec07cdf  #1d2021df  #1d2021df
 
 # $i3-background
-exec_always --no-startup-id xsetroot -solid '#3c3836'
+exec_always --no-startup-id xsetroot -solid '#1d2021'
 
 #############################
 ### settings for i3-gaps: ###

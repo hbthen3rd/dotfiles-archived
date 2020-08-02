@@ -1,4 +1,7 @@
-theme = "gruvbox-dark"
+[theme]
+name = "gruvbox-dark"
+[theme.overrides]
+idle_bg = "#1d2021"
 
 [icons]
 name = "awesome5"

@@ -119,6 +119,8 @@ set number
 
 let no_buffers_menu=1
 autocmd vimenter * colorscheme gruvbox
+let g:gruvbox_contrast_dark = "hard"
+let g:gruvbox_italic = "1"
 
 set mousemodel=popup
 set t_Co=256
@@ -143,6 +145,9 @@ endif
 
 "" Enable mouse
 set mouse=a
+
+"" Restore cursor on exit
+au VimLeave * set guicursor=a:ver100-blinkwait300-blinkon400-blinkoff300
 
 "" Status bar
 set laststatus=2

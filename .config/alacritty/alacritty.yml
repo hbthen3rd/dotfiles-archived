@@ -170,13 +170,11 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Gruvbox Dark)
+# Colors (Gruvbox Dark Hard)
 colors:
   # Default colors
   primary:
-    # hard contrast: background = '#1d2021'
-    background: '#282828'
-    # soft contrast: background = '#32302f'
+    background: '#1d2021'
     foreground: '#ebdbb2'
 
     # Bright and dim foreground colors

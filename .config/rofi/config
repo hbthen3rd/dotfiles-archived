@@ -10,4 +10,4 @@ rofi.fixed-num-lines:         false
 rofi.bw:                      4
 rofi.padding:                 0
 rofi.yoffset:                 -256
-rofi.theme: /usr/share/rofi/themes/gruvbox-dark.rasi
+rofi.theme: /usr/share/rofi/themes/gruvbox-dark-hard.rasi
