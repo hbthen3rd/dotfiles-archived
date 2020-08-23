@@ -9,6 +9,7 @@
 ![Screenshot 5](/screenshot5.png?raw=true 'Screenshot 5')
 ![Screenshot 6](/screenshot6.png?raw=true 'Screenshot 6')
 ![Screenshot 7](/screenshot7.png?raw=true 'Screenshot 7')
+![Screenshot 8](/screenshot8.png?raw=true 'Screenshot 8')
 
 ## OS
 
