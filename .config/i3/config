@@ -311,10 +311,10 @@ bar {
 	  separator #a89984df
 
     # colorclass        border     background text
-	  focused_workspace   #282828df  #1d2021df  #8ec07cdf
-	  active_workspace    #1d2021df  #1d2021df  #689d6adf
+	  focused_workspace   #282828df  #1d2021df  #fe8019df
+	  active_workspace    #1d2021df  #1d2021df  #d65d0edf
 	  inactive_workspace  #32302fdf  #32302fdf  #ebdbb2df
-	  urgent_workspace    #8ec07cdf  #8ec07cdf  #1d2021df
+	  urgent_workspace    #fe8019df  #fe8019df  #1d2021df
   }
 }
 
@@ -322,10 +322,10 @@ bar {
 bindsym $mod+m bar mode toggle
 
 # colorclass             border     background text       indicator
-client.focused           #282828df  #1d2021df  #ebdbb2df  #8ec07cdf
-client.focused_inactive  #1d2021df  #1d2021df  #d5c4a1df  #689d6adf
+client.focused           #282828df  #1d2021df  #ebdbb2df  #fe8019df
+client.focused_inactive  #1d2021df  #1d2021df  #d5c4a1df  #d65d0edf
 client.unfocused         #32302fdf  #32302fdf  #a89984df  #32302fdf
-client.urgent            #8ec07cdf  #8ec07cdf  #1d2021df  #1d2021df
+client.urgent            #fe8019df  #fe8019df  #1d2021df  #1d2021df
 
 # $i3-background
 exec_always --no-startup-id xsetroot -solid '#1d2021'
