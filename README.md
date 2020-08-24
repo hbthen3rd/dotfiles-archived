@@ -9,7 +9,6 @@
 ![Screenshot 5](/screenshot5.png?raw=true 'Screenshot 5')
 ![Screenshot 6](/screenshot6.png?raw=true 'Screenshot 6')
 ![Screenshot 7](/screenshot7.png?raw=true 'Screenshot 7')
-![Screenshot 8](/screenshot8.png?raw=true 'Screenshot 8')
 
 ## OS
 
@@ -26,7 +25,7 @@
 
 ### [i3-gaps](https://github.com/Airblader/i3/wiki/Installation)
 
-- Compositor (for transparency effect): [picom](https://github.com/yshui/picom/)
+- Compositor: [picom](https://github.com/yshui/picom/)
 - Status bar: [i3status-rust](https://github.com/greshake/i3status-rust)
 - Launcher: [Rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md#install-distribution)
 - Widget: [Conky](https://github.com/brndnmtthws/conky/wiki/Installation#conky-on-operating-systems)
