@@ -300,6 +300,7 @@ bar {
 	font pango:CaskaydiaCove Nerd Font Mono 12
   position top
 	status_command i3status-rs
+  tray_padding 4
 
 	bindsym button4 nop
 	bindsym button5 nop
@@ -307,8 +308,6 @@ bar {
   
   colors {
 	  background #282828df
-	  statusline #ebdbb2df
-	  separator #a89984df
 
     # colorclass        border     background text
 	  focused_workspace   #282828df  #1d2021df  #fe8019df
