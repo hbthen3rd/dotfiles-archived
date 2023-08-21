@@ -5,23 +5,12 @@
 ![Screenshot 1](/screenshot1.png?raw=true 'Screenshot 1')
 ![Screenshot 2](/screenshot2.png?raw=true 'Screenshot 2')
 ![Screenshot 3](/screenshot3.png?raw=true 'Screenshot 3')
-![Screenshot 4](/screenshot4.png?raw=true 'Screenshot 4')
-![Screenshot 5](/screenshot5.png?raw=true 'Screenshot 5')
-![Screenshot 6](/screenshot6.png?raw=true 'Screenshot 6')
-![Screenshot 7](/screenshot7.png?raw=true 'Screenshot 7')
 
-## OS
+## Machine + OS
 
-- Manjaro Architect + i3 DE + minimal installation
+- M2 MacBook Air / macOS Ventura 13.5
 
-## Fonts
-
-- Interface: [Segoe UI](https://github.com/mrbvrz/segoe-ui-linux#how-to-install-it)
-- Emoji: [Twemoji](https://github.com/eosrei/twemoji-color-font/releases) with [Bitstream Vera](https://www.gnome.org/fonts/) fallback
-- Editor: [Cascadia Code](https://github.com/microsoft/cascadia-code/releases)
-- Shell: [CaskaydiaCove Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/CascadiaCode/complete)
-
-## WM
+## Desktop
 
 ### [i3-gaps](https://github.com/Airblader/i3/wiki/Installation)
 
