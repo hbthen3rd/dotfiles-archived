@@ -15,7 +15,10 @@
 ### [yabai](https://github.com/koekeishiya/yabai)
 
 - Creates 7 workspaces (desktops)
-- System Preferences > Mission Control > uncheck "Automatically rearrange Spaces based on most recent use".
+- System Preferences > Desktop and Dock (**bold** is required):
+  - Dock: check "Automatically hide and show the Dock"
+  - **Menu Bar: set "Automatically hide and show the menu bar" to "Always"**
+  - **Mission Control: uncheck "Automatically rearrange Spaces based on most recent use".**
 - _Some advanced features of `yabai` [requires SIP to be disabled](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)._ _**However, disabling SIP will also disable Apple Pay on your Mac.**_ **For my setup, I left SIP enabled. My configs doesn't use any advanced feature from `yabai`.**
 
 ### [skhd](https://github.com/koekeishiya/skhd)
@@ -65,7 +68,7 @@
 ### [Ranger](https://github.com/ranger/ranger)
 
 - Install from HEAD commit instead of pre-built binary: `brew install --HEAD ranger`
-- File preview dependencies (**bold** is recommended):
+- File preview dependencies (**bold** is required):
   - **[ImageMagick](https://formulae.brew.sh/formula/imagemagick)**
   - **[librsvg (`rsvg-convert`)](https://formulae.brew.sh/formula/librsvg)**
   - **[djvulibre (`ddjvu`)](https://formulae.brew.sh/formula/djvulibre)**
