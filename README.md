@@ -12,22 +12,31 @@
 
 ## Desktop
 
-### [i3-gaps](https://github.com/Airblader/i3/wiki/Installation)
+### [yabai](https://github.com/koekeishiya/yabai)
 
-- Compositor: [picom](https://github.com/yshui/picom/)
-- Status bar: [i3status-rust](https://github.com/greshake/i3status-rust)
-- Launcher: [Rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md#install-distribution)
-- Widget: [Conky](https://github.com/brndnmtthws/conky/wiki/Installation#conky-on-operating-systems)
-- Background setter: [nitrogen](https://github.com/l3ib/nitrogen/)
-- GTK:
-  - Theme: [Flat Remix GTK](https://drasite.com/flat-remix-gtk)
-  - Icon: [Flat Remix ICON](https://drasite.com/flat-remix)
+- Creates 7 workspaces (desktops)
+- System Preferences > Mission Control > uncheck "Automatically rearrange Spaces based on most recent use".
+- _Some advanced features of `yabai` [requires SIP to be disabled](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)._ _**However, disabling SIP will also disable Apple Pay on your Mac.**_ **For my setup, I left SIP enabled. My configs doesn't use any advanced feature from `yabai`.**
 
-## Term
+### [skhd](https://github.com/koekeishiya/skhd)
 
-### [Alacritty](https://github.com/alacritty/alacritty#installation)
+### [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
-## Shell
+- Icon font: [CaskaydiaCove Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/CascadiaCode)
+- Label font: [SF Pro](https://developer.apple.com/fonts/)
+
+### [Alfred](https://www.alfredapp.com/)
+
+- Theme: [Ayu dark](/manual-application/Alfred/Ayu-dark.alfredappearance)
+- [iTerms integration](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
+
+## Term + Shell + Package Manager
+
+### [iTerm](https://iterm2.com/)
+
+- Font: [CaskaydiaCove Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/CascadiaCode)
+- Color scheme: [Ayu dark](/manual-application/iTerm/Ayu-dark.itermcolors)
+- Profile: [Window tweaks](/manual-application/iTerm/Default.json) (Transparency, Blur radius, No Title Bar style)
 
 ### [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
@@ -37,39 +46,71 @@
   - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 
+### [Homebrew](https://brew.sh/)
+
 ## Editor
 
-### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-package)
+### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux)
 
-- Plugin manager: [vim-plug](https://github.com/junegunn/vim-plug#neovim)
-- Language server: [coc.nvim](https://github.com/neoclide/coc.nvim#quick-start)
-  - Run [.local/bin/setup-coc](/.local/bin/setup-coc) to install all the coc extensions
+- Plugin manager + Starter template: [LazyVim](https://www.lazyvim.org/installation)
 - Misc:
   - `python2`, `pip2`, `pynvim (pip2)`
   - `python3`, `pip3`, `pynvim (pip3)`
   - `ruby`, `gem`, `neovim (gem)`
   - `node`, `npm`, `neovim (npm)`
-  - `yarn` classic (v1.x) - for coc.nvim and prettier
-  - Run `:checkhealth` in `nvim` before using the `init.vim` file
+  - Run `:checkhealth` in `nvim`
 
-## Browsers
+## File + Web Browsers
 
-- [qutebrowser](https://qutebrowser.org/doc/install.html) (QTWebEngine (Blink fork)) - lightweight browser for quickly looking up something (no extension/add-on)
-- Chromium (Blink) - JavaScript devtools + main browser for browsing
-  - [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-- Firefox (Gecko) - CSS devtools
-  - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-- [GNOME Web (Epiphany)](https://wiki.gnome.org/Apps/Web) (Webkit) - browser for dev testing (no extension/add-on)
+### [Ranger](https://github.com/ranger/ranger)
+
+- Install from HEAD commit instead of pre-built binary: `brew install --HEAD ranger`
+- File preview dependencies (**bold** is recommended):
+  - **[ImageMagick](https://formulae.brew.sh/formula/imagemagick)**
+  - **[librsvg (`rsvg-convert`)](https://formulae.brew.sh/formula/librsvg)**
+  - **[djvulibre (`ddjvu`)](https://formulae.brew.sh/formula/djvulibre)**
+  - **[ffmpeg](https://formulae.brew.sh/formula/ffmpeg)**
+  - **[ffmpegthumbnailer](https://formulae.brew.sh/formula/ffmpegthumbnailer)**
+  - **[poppler (`pdftoppm`)](https://formulae.brew.sh/formula/poppler)**
+  - [fontforge (`fontimage`)](https://formulae.brew.sh/formula/fontforge)
+  - [pandoc](https://formulae.brew.sh/formula/pandoc)
+  - [mu](https://formulae.brew.sh/formula/mu)
+  - [xlsx2csv](https://github.com/dilshod/xlsx2csv): `pip3 install xlsx2csv`
+  - [djvulibre (`djvutxt`)](https://formulae.brew.sh/formula/djvulibre)
+  - [exiftool](https://formulae.brew.sh/formula/exiftool)
+  - [media-info (`mediainfo`)](https://formulae.brew.sh/formula/media-info)
+  - [binutils (`readelf`)](https://command-not-found.com/readelf)
+  - [rar (`unrar`)](https://formulae.brew.sh/cask/rar)
+  - [p7zip (`7z`)](https://formulae.brew.sh/formula/p7zip)
+  - [odt2txt](https://formulae.brew.sh/formula/odt2txt)
+  - [w3m](https://formulae.brew.sh/formula/w3m)
+  - [jq](https://formulae.brew.sh/formula/jq)
+
+### [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+
+- [Firefox Onebar](https://codeberg.org/Freeplay/Firefox-Onebar) theme:
+  - `onebar.disable-autohide-of-URLbar-icons : false`
+  - `onebar.disable-centering-of-URLbar      : false`
+  - `onebar.disable-https-truncate           : false`
+  - `onebar.disable-single-tab               : true`
+  - `onebar.hide-all-URLbar-icons            : true`
+  - `onebar.hide-navigation-buttons          : false`
+- [Layout and color tweaks](/manual-application/Firefox/userChrome.css) to match Ayu-dark color (Firefox Onebar included)
 
 ## Other tools
 
 - [exa](https://the.exa.website/#installation)
-- [The Silver Searcher (ag)](https://github.com/ggreer/the_silver_searcher#linux)
 - [fzf](https://github.com/junegunn/fzf#using-linux-package-managers)
 - [bat](https://github.com/sharkdp/bat#on-arch-linux)
 - [ripgrep (rg)](https://github.com/BurntSushi/ripgrep#installation)
-- [dust](https://github.com/bootandy/dust#install)
-- [ytop](https://github.com/cjbassi/ytop#installation)
+- [ytop](https://github.com/cjbassi/ytop#installation) // fix
 - [procs](https://github.com/dalance/procs#installation)
-- [bandwhich](https://github.com/imsnif/bandwhich#arch-linux)
-- [tealdeer (tldr)](https://github.com/dbrgn/tealdeer#from-package-manager)
+
+- `cat` > [`bat`](https://github.com/sharkdp/bat#on-macos-or-linux-via-homebrew)
+- `find` > [`fd`](https://github.com/sharkdp/fd#on-macos)
+- [`fzf`](https://github.com/junegunn/fzf#using-homebrew)
+  - `fzf` `fd` integration in part of [shell config](/.zshrc)
+- `grep` > [ripgrep (`rg`)](https://github.com/BurntSushi/ripgrep#installation)
+- [`gtop`](https://github.com/aksakalli/gtop#installation)
+- `ls` > [`exa`](https://github.com/ogham/exa#homebrew)
+- `ps` > [`procs`](https://github.com/dalance/procs#homebrew)

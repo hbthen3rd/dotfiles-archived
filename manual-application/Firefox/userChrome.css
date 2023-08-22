@@ -46,12 +46,12 @@
 /*************** https://codeberg.org/Freeplay/Firefox-Onebar ***************/
 
 /* about:config
-onebar.disable-autohide-of-URLbar-icons false
-onebar.disable-centering-of-URLbar      false
-onebar.disable-https-truncate           false
-onebar.disable-single-tab               true
-onebar.hide-all-URLbar-icons            true
-onebar.hide-navigation-buttons          false
+onebar.disable-autohide-of-URLbar-icons : false
+onebar.disable-centering-of-URLbar      : false
+onebar.disable-https-truncate           : false
+onebar.disable-single-tab               : true
+onebar.hide-all-URLbar-icons            : true
+onebar.hide-navigation-buttons          : false
 */
 
 /* 1.4.1

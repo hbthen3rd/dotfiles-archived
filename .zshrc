@@ -130,8 +130,8 @@ PERL_LOCAL_LIB_ROOT="/Users/hbthen3rd/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_
 PERL_MB_OPT="--install_base \"/Users/hbthen3rd/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/hbthen3rd/perl5"; export PERL_MM_OPT;
 
-export LDFLAGS="-L/opt/homebrew/opt/libffi/lib -L/opt/homebrew/opt/llvm/lib/c++ -Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/libffi/include -I/opt/homebrew/opt/llvm/include"
+export LDFLAGS="-L/opt/homebrew/opt/binutils/lib -L/opt/homebrew/opt/libffi/lib -L/opt/homebrew/opt/llvm/lib/c++ -Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/binutils/include -I/opt/homebrew/opt/libffi/include -I/opt/homebrew/opt/llvm/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
 
-export PATH="/opt/homebrew/opt/llvm/bin:/Users/hbthen3rd/perl5/bin:$PATH"
+export PATH="/opt/homebrew/opt/binutils/bin:/opt/homebrew/opt/llvm/bin:/Users/hbthen3rd/perl5/bin:$PATH"
