@@ -88,7 +88,7 @@
 
 ### [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
-- [Firefox Onebar](https://codeberg.org/Freeplay/Firefox-Onebar) theme:
+- [Firefox Onebar](https://codeberg.org/Freeplay/Firefox-Onebar) theme with the following `about:config`:
   - `onebar.disable-autohide-of-URLbar-icons : false`
   - `onebar.disable-centering-of-URLbar      : false`
   - `onebar.disable-https-truncate           : false`
@@ -113,8 +113,8 @@
 - `grep` > [ripgrep (`rg`)](https://github.com/BurntSushi/ripgrep#installation)
 - [`gtop`](https://github.com/aksakalli/gtop#installation)
 - `ls` > [`exa`](https://github.com/ogham/exa#homebrew)
-- `ps` > [`procs`](https://github.com/dalance/procs#homebrew)
 - [`neofetch`](https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew)
-- [`tty-clock`](https://formulae.brew.sh/formula/tty-clock)
 - [pipes-sh (`pipes.sh`)](https://formulae.brew.sh/formula/pipes-sh)
+- `ps` > [`procs`](https://github.com/dalance/procs#homebrew)
+- [`tty-clock`](https://formulae.brew.sh/formula/tty-clock)
 - [`unimatrix`](https://github.com/will8211/unimatrix): `pip3 install git+https://github.com/will8211/unimatrix.git`
