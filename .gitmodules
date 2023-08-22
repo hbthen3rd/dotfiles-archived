@@ -10,3 +10,6 @@
 [submodule ".oh-my-zsh/custom/themes/powerlevel10k"]
 	path = .oh-my-zsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "manual-application/Alfred/custom-alfred-iterm-scripts"]
+	path = manual-application/Alfred/custom-alfred-iterm-scripts
+	url = https://github.com/vitorgalvao/custom-alfred-iterm-scripts.git
