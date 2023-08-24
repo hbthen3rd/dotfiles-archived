@@ -75,10 +75,9 @@
   - [pandoc](https://formulae.brew.sh/formula/pandoc)
   - [mu](https://formulae.brew.sh/formula/mu)
   - [xlsx2csv](https://github.com/dilshod/xlsx2csv): `pip3 install xlsx2csv`
-  - [djvulibre (`djvutxt`)](https://formulae.brew.sh/formula/djvulibre)
   - [exiftool](https://formulae.brew.sh/formula/exiftool)
   - [media-info (`mediainfo`)](https://formulae.brew.sh/formula/media-info)
-  - [binutils (`readelf`)](https://command-not-found.com/readelf)
+  - [binutils (`readelf`)](https://formulae.brew.sh/formula/binutils)
   - [rar (`unrar`)](https://formulae.brew.sh/cask/rar)
   - [p7zip (`7z`)](https://formulae.brew.sh/formula/p7zip)
   - [odt2txt](https://formulae.brew.sh/formula/odt2txt)
