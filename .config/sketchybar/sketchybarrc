@@ -26,24 +26,24 @@ sketchybar --bar color=0x00000000 \
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
 
-sketchybar --default padding_left=8                                \
-                     padding_right=8                               \
-                                                                   \
-                     background.border_color=$YELLOW               \
-                     background.border_width=2                     \
-                     background.height=40                          \
-                     background.corner_radius=12                   \
-                                                                   \
-                     icon.color=$YELLOW                            \
-                     icon.highlight_color=$BACKGROUND              \
-                     icon.padding_left=6                           \
-                     icon.padding_right=2                          \
-                     icon.font="CaskaydiaCove Nerd Font:Book:16.0" \
-                                                                   \
-                     label.color=$YELLOW                           \
-                     label.highlight_color=$BACKGROUND             \
-                     label.padding_left=2                          \
-                     label.padding_right=6                         \
+sketchybar --default padding_left=8                                   \
+                     padding_right=8                                  \
+                                                                      \
+                     background.border_color=$YELLOW                  \
+                     background.border_width=2                        \
+                     background.height=40                             \
+                     background.corner_radius=12                      \
+                                                                      \
+                     icon.color=$YELLOW                               \
+                     icon.highlight_color=$BACKGROUND                 \
+                     icon.padding_left=6                              \
+                     icon.padding_right=2                             \
+                     icon.font="CaskaydiaCove Nerd Font:Regular:16.0" \
+                                                                      \
+                     label.color=$YELLOW                              \
+                     label.highlight_color=$BACKGROUND                \
+                     label.padding_left=2                             \
+                     label.padding_right=6                            \
                      label.font="SF Pro:Semibold:12.0"
 
 ##### Adding Mission Control Space Indicators #####
@@ -51,9 +51,9 @@ sketchybar --default padding_left=8                                \
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 # to indicate active and available mission control spaces
 
-SPACE_ICONS=("" "" "" "" "" "" "")
-SPACE_LABELS=("Dev" "Browse" "Space" "Mail" "Calendar" "Social" "Music")
-SPACE_COLORS=($YELLOW $MAGENTA $CYAN $BLUE $RED $WHITE $GREEN)
+SPACE_ICONS=("" "" "" "" "" "" "")
+SPACE_LABELS=("Dev" "Browse" "Space" "Social" "Mail" "Calendar" "Music")
+SPACE_COLORS=($YELLOW $MAGENTA $CYAN $WHITE $BLUE $RED $GREEN)
 LENGTH=${#SPACE_ICONS[@]}
 
 for i in "${!SPACE_ICONS[@]}"

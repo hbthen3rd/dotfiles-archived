@@ -25,7 +25,7 @@
 
 ### [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
-- Icon font: [CaskaydiaCove Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/CascadiaCode)
+- Icon font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 - Label font: [SF Pro](https://developer.apple.com/fonts/)
 
 ### [Alfred](https://www.alfredapp.com/)
@@ -37,7 +37,7 @@
 
 ### [iTerm](https://iterm2.com/)
 
-- Font: [CaskaydiaCove Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/CascadiaCode)
+- Font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 - Color scheme: [Ayu dark](/manual-application/iTerm/Ayu-dark.itermcolors)
 - Profile: [Window tweaks](/manual-application/iTerm/Default.json) (Transparency, Blur radius, No Title Bar style)
 
