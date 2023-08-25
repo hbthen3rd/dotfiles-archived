@@ -121,17 +121,7 @@ export FZF_DEFAULT_COMMAND='fd --type file --color=always --follow --hidden --ex
 export FZF_DEFAULT_OPTS="--ansi --border"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+# nvm config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionexport PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-
-PERL5LIB="/Users/hbthen3rd/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/hbthen3rd/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/hbthen3rd/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/hbthen3rd/perl5"; export PERL_MM_OPT;
-
-export LDFLAGS="-L/opt/homebrew/opt/binutils/lib -L/opt/homebrew/opt/libffi/lib -L/opt/homebrew/opt/llvm/lib/c++ -Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/binutils/include -I/opt/homebrew/opt/libffi/include -I/opt/homebrew/opt/llvm/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
-
-export PATH="/opt/homebrew/opt/binutils/bin:/opt/homebrew/opt/llvm/bin:/Users/hbthen3rd/perl5/bin:$PATH"

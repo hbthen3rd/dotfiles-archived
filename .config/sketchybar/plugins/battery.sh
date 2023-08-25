@@ -7,53 +7,53 @@ IS_CHARGING=$(pmset -g batt | grep 'AC Power')
 
 case ${BATT_PERCENT} in
 100)
-	ICON=""
+	ICON="󰁹"
 	COLOR=$BRIGHT_GREEN
 	;;
 9[0-9])
-	ICON=""
+	ICON="󰂂"
 	COLOR=$BRIGHT_GREEN
 	;;
 8[0-9])
-	ICON=""
+	ICON="󰂁"
 	COLOR=$GREEN
 	;;
 7[0-9])
-	ICON=""
+	ICON="󰂀"
 	COLOR=$BRIGHT_YELLOW
 	;;
 6[0-9])
-	ICON=""
+	ICON="󰁿"
 	COLOR=$YELLOW
 	;;
 5[0-9])
-	ICON=""
+	ICON="󰁾"
 	COLOR=$YELLOW
 	;;
 4[0-9])
-	ICON=""
+	ICON="󰁽"
 	COLOR=$YELLOW
 	;;
 3[0-9])
-	ICON=""
+	ICON="󰁼"
 	COLOR=$YELLOW
 	;;
 2[0-9])
-	ICON=""
+	ICON="󰁻"
 	COLOR=$BRIGHT_RED
 	;;
 1[0-9])
-	ICON=""
+	ICON="󰁺"
 	COLOR=$RED
 	;;
 *)
-	ICON=""
+	ICON="󰂎"
 	COLOR=$RED
 	;;
 esac
 
 if [[ $IS_CHARGING != "" ]]; then
-	ICON=""
+	ICON="󰂄"
 	COLOR=$BRIGHT_GREEN
 fi
 
@@ -62,4 +62,4 @@ fi
 sketchybar --set $NAME icon=$ICON \
 	icon.color=$COLOR \
 	label="${BATT_PERCENT}%" \
-	label.color=$COLOR \
+	label.color=$COLOR
