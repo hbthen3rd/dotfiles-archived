@@ -190,10 +190,6 @@ sketchybar --add bracket status ip_address volume battery     \
            --set         status background.color=$BACKGROUND  \
                                 background.border_color=$BLUE
 
-sketchybar --add bracket status ip_address network.up network.down   \
-           --set         status background.color=$BACKGROUND         \
-                                background.border_color=$BLUE
-
 sketchybar --add item seperator.2 right                  \
            --set      seperator.2 padding_left=4         \
                                   padding_right=4        \
