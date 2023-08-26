@@ -30,7 +30,7 @@
 
 ### [Alfred](https://www.alfredapp.com/)
 
-- Theme: [Ayu dark](/manual-application/Alfred/Ayu-dark.alfredappearance)
+- Theme: [Gruvbox Dark (Hard)](/manual-application/Alfred/Gruvbox%20Dark%20(Hard).alfredappearance)
 - [iTerms integration](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
 
 ## Term + Shell + Package Manager
@@ -38,7 +38,7 @@
 ### [iTerm](https://iterm2.com/)
 
 - Font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
-- Color scheme: [Ayu dark](/manual-application/iTerm/Ayu-dark.itermcolors)
+- Color scheme: [Gruvbox Dark (Hard)](/manual-application/iTerm/Gruvbox%20Dark%20(Hard).itermcolors)
 - Profile: [Window tweaks](/manual-application/iTerm/Default.json) (Transparency, Blur radius, No Title Bar style)
 
 ### [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
@@ -93,7 +93,7 @@
   - `onebar.disable-single-tab               : true`
   - `onebar.hide-all-URLbar-icons            : true`
   - `onebar.hide-navigation-buttons          : false`
-- [Layout and color tweaks](/manual-application/Firefox/userChrome.css) to match Ayu-dark color (Firefox Onebar included)
+- [Layout and color tweaks](/manual-application/Firefox/userChrome.css) to match Gruvbox Dark (Hard) color (Firefox Onebar included)
 
 ## Other tools
 
