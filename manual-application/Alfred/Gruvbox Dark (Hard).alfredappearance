@@ -6,7 +6,7 @@
         "size" : 12,
         "colorSelected" : "#FFFFFFCB",
         "font" : "System",
-        "color" : "#FFFFFFA1"
+        "color" : "#FFFFFF7E"
       },
       "shortcut" : {
         "size" : 16,
@@ -14,21 +14,21 @@
         "font" : "System",
         "color" : "#FFFFFF7E"
       },
-      "backgroundSelected" : "#E6B350FF",
+      "backgroundSelected" : "#FE8019A0",
       "text" : {
         "size" : 18,
         "colorSelected" : "#FFFFFFFF",
         "font" : "System",
-        "color" : "#FFFFFFE0"
+        "color" : "#FFFFFFCB"
       },
       "iconPaddingHorizontal" : 7,
-      "roundness" : 8,
-      "paddingVertical" : 3,
+      "roundness" : 4,
+      "paddingVertical" : 8,
       "iconSize" : 40
     },
     "search" : {
-      "backgroundSelected" : "#358188FF",
-      "paddingHorizontal" : 7,
+      "backgroundSelected" : "#FE8019A0",
+      "paddingHorizontal" : 4,
       "spacing" : 9,
       "text" : {
         "size" : 36,
@@ -36,18 +36,18 @@
         "font" : "System Light",
         "color" : "#FFFFFFFF"
       },
-      "background" : "#00000040",
+      "background" : "#00000060",
       "roundness" : 8,
       "paddingVertical" : 5
     },
     "window" : {
-      "color" : "#0B0E142E",
-      "paddingHorizontal" : 9,
+      "color" : "#1D202061",
+      "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
       "blur" : 0,
-      "roundness" : 15,
+      "roundness" : 12,
       "paddingVertical" : 9
     },
     "credit" : "hb",
@@ -57,9 +57,9 @@
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#358188FF",
+      "color" : "#FE8019FF",
       "thickness" : 2
     },
-    "name" : "Ayu-dark"
+    "name" : "Gruvbox Dark (Hard)"
   }
 }
