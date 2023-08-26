@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-source "$HOME/.config/colors.sh" # Loads all defined colors
+source "$HOME/.config/colors.sh"
 
 #
 # for this to work you must configure sudo such that
@@ -29,8 +29,8 @@ yabai -m config \
 	normal_window_opacity 1.0 \
 	window_opacity off \
 	insert_feedback_color 0xffd75f5f \
-	active_window_border_color $ACCENT \
-	normal_window_border_color $BACKGROUND \
+	active_window_border_color $COLOR_ACCENT \
+	normal_window_border_color $COLOR_BACKGROUND \
 	window_border_width 4 \
 	window_border_radius 12 \
 	window_border_blur off \
