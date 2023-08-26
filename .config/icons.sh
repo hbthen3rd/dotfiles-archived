@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Icons
+# Material Design Icons
 
 export ICON_CMD=󰘳
 export ICON_SETTINGS=󰒓

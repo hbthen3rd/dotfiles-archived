@@ -39,4 +39,4 @@ DOWN_FORMAT=$(human_readable $DOWN 1)
 UP_FORMAT=$(human_readable $UP 1)
 
 sketchybar --set network.down label="$DOWN_FORMAT/s" \
-	       --set network.up   label="$UP_FORMAT/s"
+	         --set network.up   label="$UP_FORMAT/s"

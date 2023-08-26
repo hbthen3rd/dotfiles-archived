@@ -3,12 +3,12 @@
     display: none;
 }
 
-/* Tweak colors to match Ayu dark theme */
+/* Tweak colors to match Gruvbox Dark (Hard) theme */
 #navigator-toolbox {
-    background-color: #0b0e14 !important;
+    background-color: #1d2021 !important;
 }
 :hover .tab-background {
-    background-color: #0b0e14 !important;;
+    background-color: #1d2021 !important;;
 }
 .tab-background[selected="true"] {
     background-image: none !important;
@@ -17,7 +17,7 @@
 .tab-background[selected="true"]::after {
     position: absolute;
     content: '';
-    background-color: #e6b450;
+    background-color: #fe8019;
     right: 0;
     bottom: -6px;
     left: 0;
@@ -46,12 +46,12 @@
 /*************** https://codeberg.org/Freeplay/Firefox-Onebar ***************/
 
 /* about:config
-onebar.disable-autohide-of-URLbar-icons : false
-onebar.disable-centering-of-URLbar      : false
-onebar.disable-https-truncate           : false
-onebar.disable-single-tab               : true
-onebar.hide-all-URLbar-icons            : true
-onebar.hide-navigation-buttons          : false
+onebar.disable-autohide-of-URLbar-icons false
+onebar.disable-centering-of-URLbar      false
+onebar.disable-https-truncate           false
+onebar.disable-single-tab               true
+onebar.hide-all-URLbar-icons            true
+onebar.hide-navigation-buttons          false
 */
 
 /* 1.4.1
