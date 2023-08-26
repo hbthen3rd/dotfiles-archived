@@ -2,9 +2,9 @@
 
 ## Screenshots
 
-![Screenshot 1](/ss1.png?raw=true 'Screenshot 1')
-![Screenshot 2](/ss2.png?raw=true 'Screenshot 2')
-![Screenshot 3](/ss3.png?raw=true 'Screenshot 3')
+![Screenshot 1](/Screenshot_1.png?raw=true 'Screenshot 1')
+![Screenshot 2](/Screenshot_2.png?raw=true 'Screenshot 2')
+![Screenshot 3](/Screenshot_3.png?raw=true 'Screenshot 3')
 
 ## Machine + OS
 
@@ -14,26 +14,31 @@
 
 ### [yabai](https://github.com/koekeishiya/yabai)
 
-- Creates 7 workspaces (desktops)
 - System Preferences > Desktop and Dock (**bold** is required):
-  - Dock: check "Automatically hide and show the Dock"
-  - **Menu Bar: set "Automatically hide and show the menu bar" to "Always"**
   - **Mission Control: uncheck "Automatically rearrange Spaces based on most recent use".**
 - _Some advanced features of `yabai` [requires SIP to be disabled](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)._ _**However, disabling SIP will also disable Apple Pay on your Mac.**_ **For my setup, I left SIP enabled. My configs doesn't use any advanced feature from `yabai`.**
 
 ### [skhd](https://github.com/koekeishiya/skhd)
 
+- System Preferences > Keyboard > Keyboard Shortcuts... (**bold** is required):
+  - For each of the item on the left side bar > click "Restore Defaults"
+  - **Mission Control > Make sure everything under Mission Control is checked (Move left/right, switch to desktop 1/2/etc.)**
+
 ### [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
 - Icon font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 - Label font: [SF Pro](https://developer.apple.com/fonts/)
+- **Creates exactly 7 workspaces/desktops**
+- System Preferences > Desktop and Dock (**bold** is required):
+  - Dock: check "Automatically hide and show the Dock"
+  - **Menu Bar: set "Automatically hide and show the menu bar" to "Always"**
 
 ### [Alfred](https://www.alfredapp.com/)
 
 - Theme: [Gruvbox Dark (Hard)](/manual-application/Alfred/Gruvbox%20Dark%20(Hard).alfredappearance)
 - [iTerms integration](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
 
-## Term + Shell + Package Manager
+## Terminal Emulator + Shell + Package Manager
 
 ### [iTerm](https://iterm2.com/)
 
@@ -51,7 +56,7 @@
 
 ### [Homebrew](https://brew.sh/)
 
-## Editor
+## Code Editor + Git Manager
 
 ### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux)
 
@@ -59,7 +64,9 @@
 - Misc:
   - Run `:checkhealth` in `nvim` and install all dependencies
 
-## File + Web Browsers
+### [Lazygit](https://github.com/jesseduffield/lazygit#homebrew)
+
+## File Manager
 
 ### [Ranger](https://github.com/ranger/ranger)
 
@@ -84,6 +91,8 @@
   - [w3m](https://formulae.brew.sh/formula/w3m)
   - [jq](https://formulae.brew.sh/formula/jq)
 
+## Web Browser
+
 ### [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 - [Firefox Onebar](https://codeberg.org/Freeplay/Firefox-Onebar) theme with the following `about:config`:
@@ -94,6 +103,7 @@
   - `onebar.hide-all-URLbar-icons            : true`
   - `onebar.hide-navigation-buttons          : false`
 - [Layout and color tweaks](/manual-application/Firefox/userChrome.css) to match Gruvbox Dark (Hard) color (Firefox Onebar included)
+- System Preferences > Desktop and Dock > Default web browser: Firefox
 
 ## Other tools
 
