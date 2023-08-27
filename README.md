@@ -2,9 +2,9 @@
 
 ## Screenshots
 
-![Screenshot 1](/Screenshot_1.png?raw=true 'Screenshot 1')
-![Screenshot 2](/Screenshot_2.png?raw=true 'Screenshot 2')
-![Screenshot 3](/Screenshot_3.png?raw=true 'Screenshot 3')
+![Screenshot 1](/Screenshot1.png?raw=true 'Screenshot 1')
+![Screenshot 2](/Screenshot2.png?raw=true 'Screenshot 2')
+![Screenshot 3](/Screenshot3.png?raw=true 'Screenshot 3')
 
 ## Machine + OS
 
