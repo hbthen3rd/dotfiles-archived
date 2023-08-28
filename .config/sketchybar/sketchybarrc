@@ -289,7 +289,7 @@ sketchybar --add item  swap right                        \
                             label.color=$COLOR_YELLOW    \
                                                          \
            --add item  cpu right                         \
-           --set       cpu script="$PLUGIN_DIR/disk.sh"  \
+           --set       cpu script="$PLUGIN_DIR/cpu.sh"  \
                            update_freq=60                \
                            padding_left=8                \
                            padding_right=2               \
