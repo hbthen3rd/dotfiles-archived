@@ -83,28 +83,35 @@ alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
 
 # swap managed window
-shift + alt - h : yabai -m window --swap west
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - l : yabai -m window --swap east
+alt + shift - h : yabai -m window --swap west
+alt + shift - j : yabai -m window --swap south
+alt + shift - k : yabai -m window --swap north
+alt + shift - l : yabai -m window --swap east
 
-# move managed window
-shift + cmd - h : yabai -m window --warp west
-shift + cmd - j : yabai -m window --warp south
-shift + cmd - k : yabai -m window --warp north
-shift + cmd - l : yabai -m window --warp east
+# move managed window and split
+cmd + shift - h : yabai -m window --warp west
+cmd + shift - j : yabai -m window --warp south
+cmd + shift - k : yabai -m window --warp north
+cmd + shift - l : yabai -m window --warp east
+
+# rotate layout clockwise
+alt + shift - r : yabai -m space --rotate 270
+
+# flip layout
+alt + shift - x : yabai -m space --mirror x-axis
+alt + shift - y : yabai -m space --mirror y-axis
 
 # increase window size
-shift + alt - a : yabai -m window --resize left:-16:0
-shift + alt - d : yabai -m window --resize right:16:0
-shift + alt - w : yabai -m window --resize top:0:-16
-shift + alt - s : yabai -m window --resize bottom:0:16
+alt + shift - a : yabai -m window --resize left:-24:0
+alt + shift - d : yabai -m window --resize right:24:0
+alt + shift - w : yabai -m window --resize top:0:-24
+alt + shift - s : yabai -m window --resize bottom:0:24
 
 # decrease window size
-shift + cmd - a : yabai -m window --resize left:16:0
-shift + cmd - d : yabai -m window --resize right:-16:0
-shift + cmd - w : yabai -m window --resize top:0:16
-shift + cmd - s : yabai -m window --resize bottom:0:-16
+cmd + shift - a : yabai -m window --resize left:24:0
+cmd + shift - d : yabai -m window --resize right:-24:0
+cmd + shift - w : yabai -m window --resize top:0:24
+cmd + shift - s : yabai -m window --resize bottom:0:-24
 
 # toggle window zoom
 alt - d : yabai -m window --toggle zoom-parent
@@ -119,13 +126,13 @@ shift + alt - 0 : yabai -m space --balance
 alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # toggle sticky(+float), topmost, picture-in-picture
-alt - p : yabai -m window --toggle sticky --toggle topmost --toggle pip
+# alt - p : yabai -m window --toggle sticky --toggle topmost --toggle pip
 
 # move floating window
-ctrl + shift - a : yabai -m window --move rel:-16:0
-ctrl + shift - d : yabai -m window --move rel:16:0
-ctrl + shift - w : yabai -m window --move rel:0:-16
-ctrl + shift - s : yabai -m window --move rel:0:16
+ctrl + shift - a : yabai -m window --move rel:-24:0
+ctrl + shift - d : yabai -m window --move rel:24:0
+ctrl + shift - w : yabai -m window --move rel:0:-24
+ctrl + shift - s : yabai -m window --move rel:0:24
 
 # make floating window fill screen
 ctrl + alt - up     : yabai -m window --grid 1:1:0:0:1:1

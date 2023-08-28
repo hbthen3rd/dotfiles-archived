@@ -38,7 +38,7 @@ yabai -m config \
 	window_border on \
 	split_ratio 0.50 \
 	split_type auto \
-	auto_balance on \
+	auto_balance off \
 	top_padding 8 \
 	bottom_padding 8 \
 	left_padding 8 \
