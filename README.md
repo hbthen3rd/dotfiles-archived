@@ -26,8 +26,7 @@
 
 ### [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
-- Icon font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
-- Label font: [SF Pro](https://developer.apple.com/fonts/)
+- Font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 - **Creates exactly 7 workspaces/desktops**
 - System Preferences > Desktop and Dock (**bold** is required):
   - Dock: check "Automatically hide and show the Dock"
