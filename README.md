@@ -2,9 +2,9 @@
 
 ## Screenshots
 
-![Screenshot 1](/screenshot_1.png?raw=true 'Screenshot 1')
-![Screenshot 2](/screenshot_2.png?raw=true 'Screenshot 2')
-![Screenshot 3](/screenshot_3.png?raw=true 'Screenshot 3')
+![Screenshot 1](/ss1.png?raw=true 'Screenshot 1')
+![Screenshot 2](/ss2.png?raw=true 'Screenshot 2')
+![Screenshot 3](/ss3.png?raw=true 'Screenshot 3')
 
 ## Machine + OS
 
@@ -107,12 +107,12 @@
 
 ## Other tools
 
+- [`btop`](https://github.com/aristocratos/btop#installation)
 - `cat` > [`bat`](https://github.com/sharkdp/bat#on-macos-or-linux-via-homebrew)
 - `find` > [`fd`](https://github.com/sharkdp/fd#on-macos)
 - [`fzf`](https://github.com/junegunn/fzf#using-homebrew)
   - `fzf` `fd` integration in part of [shell config](/.zshrc)
 - `grep` > [ripgrep (`rg`)](https://github.com/BurntSushi/ripgrep#installation)
-- [`gtop`](https://github.com/aksakalli/gtop#installation)
 - `ls` > [`exa`](https://github.com/ogham/exa#homebrew)
 - [`neofetch`](https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew)
 - [pipes-sh (`pipes.sh`)](https://formulae.brew.sh/formula/pipes-sh)

@@ -22,25 +22,25 @@ sketchybar --bar color=0x00000000 \
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
 
-sketchybar --default padding_left=8                                   \
-                     padding_right=8                                  \
-                                                                      \
-                     background.border_color=$COLOR_YELLOW            \
-                     background.border_width=2                        \
-                     background.height=40                             \
-                     background.corner_radius=12                      \
-                                                                      \
-                     icon.color=$COLOR_YELLOW                         \
-                     icon.highlight_color=$COLOR_BACKGROUND           \
-                     icon.padding_left=6                              \
-                     icon.padding_right=2                             \
-                     icon.font="CaskaydiaCove Nerd Font:Regular:16.0" \
-                                                                      \
-                     label.color=$COLOR_YELLOW                        \
-                     label.highlight_color=$COLOR_BACKGROUND          \
-                     label.padding_left=2                             \
-                     label.padding_right=6                            \
-                     label.font="SF Pro:Semibold:12.0"
+sketchybar --default padding_left=8                                    \
+                     padding_right=8                                   \
+                                                                       \
+                     background.border_color=$COLOR_YELLOW             \
+                     background.border_width=2                         \
+                     background.height=40                              \
+                     background.corner_radius=12                       \
+                                                                       \
+                     icon.color=$COLOR_YELLOW                          \
+                     icon.highlight_color=$COLOR_BACKGROUND            \
+                     icon.padding_left=6                               \
+                     icon.padding_right=2                              \
+                     icon.font="CaskaydiaCove Nerd Font:Regular:16.0"  \
+                                                                       \
+                     label.color=$COLOR_YELLOW                         \
+                     label.highlight_color=$COLOR_BACKGROUND           \
+                     label.padding_left=2                              \
+                     label.padding_right=6                             \
+                     label.font="CaskaydiaCove Nerd Font:Regular:12.0"
 
 ##### Adding Menu #####
 
@@ -62,7 +62,7 @@ sketchybar --add item command.logo left                                         
                                    popup.background.border_color=$COLOR_GREEN                               \
                                                                                                             \
            --add item command.preferences popup.command.logo                                                \
-           --set      command.preferences icon=$ICON_SETTINGS                                               \
+           --set      command.preferences icon=$ICON_COG                                                    \
                                           icon.color=$COLOR_GREEN                                           \
                                           icon.padding_left=4                                               \
                                           icon.padding_right=2                                              \
@@ -73,7 +73,7 @@ sketchybar --add item command.logo left                                         
                                           click_script="open -a 'System Preferences';                    
                                                         sketchybar -m --set command.logo popup.drawing=off" \
            --add item command.activity popup.command.logo                                                   \
-           --set      command.activity icon=$ICON_TASKMANAGER                                               \
+           --set      command.activity icon=$ICON_CHART                                                     \
                                        icon.color=$COLOR_GREEN                                              \
                                        icon.padding_left=4                                                  \
                                        icon.padding_right=2                                                 \
@@ -84,7 +84,7 @@ sketchybar --add item command.logo left                                         
                                        click_script="open -a 'Activity Monitor';                       
                                                      sketchybar -m --set command.logo popup.drawing=off"    \
            --add item command.lock popup.command.logo                                                       \
-           --set      command.lock icon=$ICON_SLEEP                                                         \
+           --set      command.lock icon=$ICON_LOCK                                                          \
                                    icon.color=$COLOR_GREEN                                                  \
                                    icon.padding_left=4                                                      \
                                    icon.padding_right=2                                                     \
@@ -111,12 +111,12 @@ sketchybar --add item seperator.l1 left                   \
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 # to indicate active and available mission control spaces
 
-SPACE_ICONS=($ICON_SPACE $ICON_DEV $ICON_WEB $ICON_CHAT $ICON_MAIL $ICON_CAL $ICON_MUSIC)
-SPACE_LABELS=("Space" "Dev" "Web" "Chat" "Mail" "Calendar" "Music")
-SPACE_COLORS=($COLOR_YELLOW $COLOR_CYAN $COLOR_MAGENTA $COLOR_WHITE $COLOR_BLUE $COLOR_RED $COLOR_GREEN)
-LENGTH=${#SPACE_ICONS[@]}
+sketchybar --add event window_change
 
-for i in "${!SPACE_ICONS[@]}"
+COLORS_SPACE=($COLOR_YELLOW $COLOR_CYAN $COLOR_MAGENTA $COLOR_WHITE $COLOR_BLUE $COLOR_RED $COLOR_GREEN)
+LENGTH=${#ICONS_SPACE[@]}
+
+for i in "${!ICONS_SPACE[@]}"
 do
   sid=$(($i+1))
   PAD_LEFT=2
@@ -127,18 +127,19 @@ do
     PAD_RIGHT=8
   fi
   sketchybar --add space space.$sid left                                       \
-             --set       space.$sid script="$PLUGIN_DIR/space.sh"              \
+             --set       space.$sid script="$PLUGIN_DIR/app_space.sh"          \
                                     associated_space=$sid                      \
                                     padding_left=$PAD_LEFT                     \
                                     padding_right=$PAD_RIGHT                   \
-                                    background.color=${SPACE_COLORS[i]}        \
+                                    background.color=${COLORS_SPACE[i]}        \
                                     background.border_width=0                  \
                                     background.corner_radius=6                 \
                                     background.height=24                       \
-                                    icon=${SPACE_ICONS[i]}                     \
-                                    icon.color=${SPACE_COLORS[i]}              \
-                                    label=${SPACE_LABELS[i]}                   \
-                                    label.color=${SPACE_COLORS[i]}
+                                    icon=${ICONS_SPACE[i]}                     \
+                                    icon.color=${COLORS_SPACE[i]}              \
+                                    label="_"                                  \
+                                    label.color=${COLORS_SPACE[i]}             \
+             --subscribe space.$sid window_change
 done
 
 sketchybar --add bracket spaces '/space\..*/'                      \
@@ -289,7 +290,7 @@ sketchybar --add item  swap right                        \
                             label.color=$COLOR_YELLOW    \
                                                          \
            --add item  cpu right                         \
-           --set       cpu script="$PLUGIN_DIR/cpu.sh"  \
+           --set       cpu script="$PLUGIN_DIR/cpu.sh"   \
                            update_freq=60                \
                            padding_left=8                \
                            padding_right=2               \
