@@ -9,6 +9,10 @@ case "$1" in
   then
 	 RESULT=$ICON_CHART
 	fi
+	if grep -q "brew" <<< $2;
+  then
+	 RESULT=$ICON_PACKAGE
+	fi
 	if grep -q "nvim" <<< $2;
   then
 	 RESULT=$ICON_DEV
@@ -89,7 +93,7 @@ case "$1" in
 	RESULT=$ICON_PODCAST
 	;;
 "TV" | "QuickTime Player" | "VLC")
-	RESULT=$ICON_VIDEO
+	RESULT=$ICON_PLAY
 	;;
 "Books")
 	RESULT=$ICON_BOOK
@@ -122,7 +126,7 @@ case "$1" in
 	RESULT=$ICON_CAST
 	;;
 "Microsoft Excel")
-	RESULT=$ICON_SHEET
+	RESULT=$ICON_TABLE
 	;;
 "Microsoft PowerPoint")
 	RESULT=$ICON_PRESENT
