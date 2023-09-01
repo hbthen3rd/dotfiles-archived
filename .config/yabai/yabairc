@@ -55,6 +55,5 @@ yabai -m rule --add app="^(System Settings|System Information|Activity Monitor|F
 
 yabai -m signal --add event=window_created action="sketchybar -m --trigger window_change &> /dev/null"
 yabai -m signal --add event=window_destroyed action="sketchybar -m --trigger window_change &> /dev/null"
-yabai -m signal --add event=window_title_changed action="sketchybar -m --trigger window_change &> /dev/null"
 
 echo "yabai configuration loaded.."

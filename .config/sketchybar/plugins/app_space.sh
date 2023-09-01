@@ -10,7 +10,7 @@ sketchybar --set $NAME background.drawing=$SELECTED \
 	icon.highlight=$SELECTED \
 	label.highlight=$SELECTED
 
-if [[ $SENDER == "window_change" ]];
+if [[ $SENDER == "front_app_switched" || $SENDER == "window_change" ]];
 then
  for i in "${!ICONS_SPACE[@]}"
  do
