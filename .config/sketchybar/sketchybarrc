@@ -156,19 +156,42 @@ sketchybar --add item seperator.l2 left                   \
 # We add some regular items to the left side of the bar
 # only the properties deviating from the current defaults need to be set
 
-sketchybar --add item  front_app left                              \
-           --set       front_app script="$PLUGIN_DIR/front_app.sh" \
-                                 background.border_width=0         \
-                                 background.height=24              \
-                                 icon.drawing=off                  \
-                                 label.color=$COLOR_CYAN           \
-                                 label.padding_left=4              \
-                                 label.padding_right=4             \
-           --subscribe front_app front_app_switched
+sketchybar --add item chat left                               \
+           --set      chat script="$PLUGIN_DIR/noti_slack.sh" \
+                           update_freq=60                     \
+                           padding_left=8                     \
+                           padding_right=2                    \
+                           background.border_width=0          \
+                           background.height=24               \
+                           icon=$ICON_CHAT                    \
+                           icon.color=$COLOR_WHITE            \
+                           label.color=$COLOR_WHITE           \
+                                                              \
+           --add item mail left                               \
+           --set      mail script="$PLUGIN_DIR/noti_mail.sh"  \
+                           update_freq=60                     \
+                           padding_left=2                     \
+                           padding_right=2                    \
+                           background.border_width=0          \
+                           background.height=24               \
+                           icon=$ICON_MAIL                    \
+                           icon.color=$COLOR_BLUE             \
+                           label.color=$COLOR_BLUE            \
+                                                              \
+           --add item cal left                                \
+           --set      cal script="$PLUGIN_DIR/noti_cal.sh"    \
+                          update_freq=60                      \
+                          padding_left=2                      \
+                          padding_right=8                     \
+                          background.border_width=0           \
+                          background.height=24                \
+                          icon=$ICON_CALENDAR                 \
+                          icon.color=$COLOR_RED               \
+                          label.color=$COLOR_RED
 
-sketchybar --add bracket app front_app                           \
-           --set         app background.color=$COLOR_BACKGROUND  \
-                             background.border_color=$COLOR_CYAN
+sketchybar --add bracket notifications chat mail cal                       \
+           --set         notifications background.color=$COLOR_BACKGROUND  \
+                                       background.border_color=$COLOR_CYAN
 
 ##### Adding Right Items #####
 # In the same way as the left items we can add items to the right side.
@@ -256,49 +279,49 @@ sketchybar --add item seperator.r2 right                  \
                                    icon.drawing=off       \
                                    label.drawing=off
 
-sketchybar --add item  swap right                        \
-           --set       swap script="$PLUGIN_DIR/swap.sh" \
-                            update_freq=60               \
-                            padding_left=2               \
-                            padding_right=8              \
-                            background.border_width=0    \
-                            background.height=24         \
-                            icon=$ICON_SWAP              \
-                            icon.color=$COLOR_CYAN       \
-                            label.color=$COLOR_CYAN      \
-                                                         \
-           --add item  ram right                         \
-           --set       ram script="$PLUGIN_DIR/ram.sh"   \
-                           update_freq=60                \
-                           padding_left=2                \
-                           padding_right=2               \
-                           background.border_width=0     \
-                           background.height=24          \
-                           icon=$ICON_RAM                \
-                           icon.color=$COLOR_GREEN       \
-                           label.color=$COLOR_GREEN      \
-                                                         \
-           --add item  disk right                        \
-           --set       disk script="$PLUGIN_DIR/disk.sh" \
-                            update_freq=60               \
-                            padding_left=2               \
-                            padding_right=2              \
-                            background.border_width=0    \
-                            background.height=24         \
-                            icon=$ICON_DISK              \
-                            icon.color=$COLOR_YELLOW     \
-                            label.color=$COLOR_YELLOW    \
-                                                         \
-           --add item  cpu right                         \
-           --set       cpu script="$PLUGIN_DIR/cpu.sh"   \
-                           update_freq=60                \
-                           padding_left=8                \
-                           padding_right=2               \
-                           background.border_width=0     \
-                           background.height=24          \
-                           icon=$ICON_CPU                \
-                           icon.color=$COLOR_RED         \
-                           label.color=$COLOR_RED
+sketchybar --add item swap right                        \
+           --set      swap script="$PLUGIN_DIR/swap.sh" \
+                           update_freq=60               \
+                           padding_left=2               \
+                           padding_right=8              \
+                           background.border_width=0    \
+                           background.height=24         \
+                           icon=$ICON_SWAP              \
+                           icon.color=$COLOR_CYAN       \
+                           label.color=$COLOR_CYAN      \
+                                                        \
+           --add item ram right                         \
+           --set      ram script="$PLUGIN_DIR/ram.sh"   \
+                          update_freq=60                \
+                          padding_left=2                \
+                          padding_right=2               \
+                          background.border_width=0     \
+                          background.height=24          \
+                          icon=$ICON_RAM                \
+                          icon.color=$COLOR_GREEN       \
+                          label.color=$COLOR_GREEN      \
+                                                        \
+           --add item disk right                        \
+           --set      disk script="$PLUGIN_DIR/disk.sh" \
+                           update_freq=60               \
+                           padding_left=2               \
+                           padding_right=2              \
+                           background.border_width=0    \
+                           background.height=24         \
+                           icon=$ICON_DISK              \
+                           icon.color=$COLOR_YELLOW     \
+                           label.color=$COLOR_YELLOW    \
+                                                        \
+           --add item cpu right                         \
+           --set      cpu script="$PLUGIN_DIR/cpu.sh"   \
+                          update_freq=60                \
+                          padding_left=8                \
+                          padding_right=2               \
+                          background.border_width=0     \
+                          background.height=24          \
+                          icon=$ICON_CPU                \
+                          icon.color=$COLOR_RED         \
+                          label.color=$COLOR_RED
 
 sketchybar --add bracket activity swap ram disk cpu                      \
            --set         activity background.color=$COLOR_BACKGROUND     \
