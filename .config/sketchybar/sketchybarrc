@@ -139,7 +139,7 @@ do
                                     icon.color=${COLORS_SPACE[i]}              \
                                     label="_"                                  \
                                     label.color=${COLORS_SPACE[i]}             \
-             --subscribe space.$sid window_change
+             --subscribe space.$sid front_app_switched window_change
 done
 
 sketchybar --add bracket spaces '/space\..*/'                      \
