@@ -101,7 +101,8 @@
   - `onebar.disable-single-tab               : true`
   - `onebar.hide-all-URLbar-icons            : true`
   - `onebar.hide-navigation-buttons          : false`
-- [Layout and color tweaks](/manual-application/Firefox/userChrome.css) to match Gruvbox Dark (Hard) color (Firefox Onebar included)
+- Color and layout tweaks to [Browser XUL](/manual-application/Firefox/userChrome.css) and [`:about` pages](/manual-application/Firefox/userContent.css) to match Gruvbox Dark (Hard) color (Firefox Onebar included)
+  - **Only Dark theme is supported, no light theme or high-contrast theme support**
 - System Preferences > Desktop and Dock > Default web browser: Firefox
 
 ## Other tools
