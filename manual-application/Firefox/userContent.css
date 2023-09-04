@@ -1,0 +1,37 @@
+/* Gruvbox Dark (Hard) color scheme */
+:root {
+    --COLOR-BACKGROUND: #1d2021e0;
+    --COLOR-FOREGROUND: #fbf1c7e0;
+
+    --COLOR-ACCENT: #d65d0ee0;
+    --COLOR-ACCENT-BRIGHT: #fe8019e0;
+
+    --COLOR-BLACK: #282828e0;
+    --COLOR-RED: #cc241de0;
+    --COLOR-GREEN: #98971ae0;
+    --COLOR-YELLOW: #d79921e0;
+    --COLOR-BLUE: #458588e0;
+    --COLOR-MAGENTA: #b16286e0;
+    --COLOR-CYAN: #689d6ae0;
+    --COLOR-WHITE: #a89984e0;
+
+    --COLOR-BLACK-BRIGHT: #928374e0;
+    --COLOR-RED-BRIGHT: #fb4934e0;
+    --COLOR-GREEN-BRIGHT: #b8bb26e0;
+    --COLOR-YELLOW-BRIGHT: #fabd2fe0;
+    --COLOR-BLUE-BRIGHT: #83a598e0;
+    --COLOR-MAGENTA-BRIGHT: #d3869be0;
+    --COLOR-CYAN-BRIGHT: #8ec07ce0;
+    --COLOR-WHITE-BRIGHT: #ebdbb2e0;
+    
+    --newtab-background-color: var(--COLOR-BACKGROUND) !important;
+    --newtab-background-color-secondary: var(--COLOR-BLACK) !important;
+    --newtab-wordmark-color: var(--COLOR-FOREGROUND) !important;
+    --newtab-text-primary-color: var(--COLOR-FOREGROUND) !important;
+    --newtab-primary-action-background: var(--COLOR-ACCENT-BRIGHT) !important;
+    --newtab-primary-action-background-dimmed var(--COLOR-ACCENT) !important;
+    
+    --in-content-page-background: var(--COLOR-BACKGROUND) !important;
+    --in-content-page-color: var(--COLOR-FOREGROUND) !important;
+    --focus-outline-color: var(--COLOR-ACCENT-BRIGHT) !important;
+}

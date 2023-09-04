@@ -1,30 +1,94 @@
+/* Gruvbox Dark (Hard) color scheme */
+:root {
+    --COLOR-BACKGROUND: #1d2021e0;
+    --COLOR-FOREGROUND: #fbf1c7e0;
+
+    --COLOR-ACCENT: #d65d0ee0;
+    --COLOR-ACCENT-BRIGHT: #fe8019e0;
+
+    --COLOR-BLACK: #282828e0;
+    --COLOR-RED: #cc241de0;
+    --COLOR-GREEN: #98971ae0;
+    --COLOR-YELLOW: #d79921e0;
+    --COLOR-BLUE: #458588e0;
+    --COLOR-MAGENTA: #b16286e0;
+    --COLOR-CYAN: #689d6ae0;
+    --COLOR-WHITE: #a89984e0;
+
+    --COLOR-BLACK-BRIGHT: #928374e0;
+    --COLOR-RED-BRIGHT: #fb4934e0;
+    --COLOR-GREEN-BRIGHT: #b8bb26e0;
+    --COLOR-YELLOW-BRIGHT: #fabd2fe0;
+    --COLOR-BLUE-BRIGHT: #83a598e0;
+    --COLOR-MAGENTA-BRIGHT: #d3869be0;
+    --COLOR-CYAN-BRIGHT: #8ec07ce0;
+    --COLOR-WHITE-BRIGHT: #ebdbb2e0;
+    
+    --lwt-accent-color: var(--COLOR-BACKGROUND) !important;
+    --lwt-text-color: var(--COLOR-FOREGROUND) !important;
+    --lwt-selected-tab-background-color: var(--COLOR-BLACK) !important;
+    --toolbar-bgcolor: var(--COLOR-BLACK) !important;
+    --focus-outline-color: var(--COLOR-ACCENT-BRIGHT) !important;
+    --focus-outline: var(--focus-outline-width) solid var(--COLOR-ACCENT-BRIGHT) !important;
+    --lwt-tab-text: var(--COLOR-FOREGROUND) !important;
+    --toolbar-color: var(--COLOR-FOREGROUND) !important;
+    --toolbarbutton-icon-fill: var(--COLOR-FOREGROUND) !important;
+    --toolbarbutton-hover-background: var(--COLOR-BLACK-BRIGHT) !important;
+    --toolbarbutton-active-background: var(--COLOR-WHITE) !important;
+    --arrowpanel-background: var(--COLOR-BLACK) !important;
+    --arrowpanel-color: var(--COLOR-FOREGROUND) !important;
+    --arrowpanel-border-color: var(--COLOR-BLACK-BRIGHT) !important;
+    --toolbar-field-background-color: var(--COLOR-BACKGROUND) !important;
+    --toolbar-field-color: var(--COLOR-WHITE-BRIGHT) !important;
+    --toolbar-field-border-color: var(--COLOR-BLACK-BRIGHT) !important;
+    --toolbar-field-focus-background-color: var(--COLOR-BLACK) !important;
+    --toolbar-field-focus-color: var(--COLOR-FOREGROUND) !important;
+    --button-bgcolor: var(--COLOR-BACKGROUND) !important;
+    --button-hover-bgcolor: var(--COLOR-BLACK-BRIGHT) !important;
+    --button-active-bgcolor: var(--COLOR-WHITE) !important;
+    --button-primary-bgcolor: var(--COLOR-ACCENT) !important;
+    --button-primary-hover-bgcolor: var(--COLOR-ACCENT-BRIGHT) !important;
+    --button-primary-active-bgcolor: var(--COLOR-ACCENT-BRIGHT) !important;
+    --lwt-brighttext-url-color: var(--COLOR-ACCENT-BRIGHT) !important;
+    --lwt-toolbarbutton-icon-fill-attention: var(--COLOR-ACCENT-BRIGHT) !important;
+    --pocket-icon-fill: var(--COLOR-RED) !important;
+    --panel-separator-zap-gradient: linear-gradient(90deg, var(--COLOR-MAGENTA) 0%, var(--COLOR-RED) 52.08%, var(--COLOR-YELLOW) 100%) !important;
+}
+.identity-color-blue {
+    --identity-tab-color: var(--COLOR-BLUE) !important;
+    --identity-icon-color: var(--COLOR-BLUE) !important;
+}
+.identity-color-turquoise {
+    --identity-tab-color: var(--COLOR-CYAN) !important;
+    --identity-icon-color: var(--COLOR-CYAN) !important;
+}
+.identity-color-green {
+    --identity-tab-color: var(--COLOR-GREEN) !important;
+    --identity-icon-color: var(--COLOR-GREEN) !important;
+}
+.identity-color-yellow {
+    --identity-tab-color: var(--COLOR-YELLOW) !important;;
+    --identity-icon-color: var(--COLOR-YELLOW) !important;;
+}
+.identity-color-orange {
+    --identity-tab-color: var(--COLOR-ACCENT-BRIGHT) !important;
+    --identity-icon-color: var(--COLOR-ACCENT-BRIGHT) !important;
+}
+.identity-color-red {
+    --identity-tab-color: var(--COLOR-RED) !important;
+    --identity-icon-color: var(--COLOR-RED) !important;
+}
+.identity-color-pink {
+    --identity-tab-color: var(--COLOR-MAGENTA) !important;;
+    --identity-icon-color: var(--COLOR-MAGENTA) !important;
+}
+
 /* Hide close max min buttons */
 .titlebar-buttonbox-container {
     display: none;
 }
 
-/* Tweak colors to match Gruvbox Dark (Hard) theme */
-#navigator-toolbox {
-    background-color: #1d2021 !important;
-}
-:hover .tab-background {
-    background-color: #1d2021 !important;;
-}
-.tab-background[selected="true"] {
-    background-image: none !important;
-    position: relative;
-}
-.tab-background[selected="true"]::after {
-    position: absolute;
-    content: '';
-    background-color: #fe8019;
-    right: 0;
-    bottom: -6px;
-    left: 0;
-    height: 2px;
-}
-
-/* Layout tweaks */
+/* Layout tweaks on top of Firefox-Onebar */
 #navigator-toolbox {
     flex-direction: row-reverse !important;
 }
