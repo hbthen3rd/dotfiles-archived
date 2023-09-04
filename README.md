@@ -2,9 +2,9 @@
 
 ## Screenshots
 
-![Screenshot 1](/screenshot1.png?raw=true 'Screenshot 1')
-![Screenshot 2](/screenshot2.png?raw=true 'Screenshot 2')
-![Screenshot 3](/screenshot3.png?raw=true 'Screenshot 3')
+![Screenshot 1](/ss1.png?raw=true 'Screenshot 1')
+![Screenshot 2](/ss2.png?raw=true 'Screenshot 2')
+![Screenshot 3](/ss3.png?raw=true 'Screenshot 3')
 
 ## Machine + OS
 
@@ -101,7 +101,8 @@
   - `onebar.disable-single-tab               : true`
   - `onebar.hide-all-URLbar-icons            : true`
   - `onebar.hide-navigation-buttons          : false`
-- [Layout and color tweaks](/manual-application/Firefox/userChrome.css) to match Gruvbox Dark (Hard) color (Firefox Onebar included)
+- Color and layout tweaks to [Browser XUL](/manual-application/Firefox/userChrome.css) and [`:about` pages](/manual-application/Firefox/userContent.css) to match Gruvbox Dark (Hard) color (Firefox Onebar included)
+  - **Only Dark theme is supported, no light theme or high-contrast theme support**
 - System Preferences > Desktop and Dock > Default web browser: Firefox
 
 ## Other tools
