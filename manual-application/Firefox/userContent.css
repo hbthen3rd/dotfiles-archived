@@ -29,9 +29,19 @@
     --newtab-wordmark-color: var(--COLOR-FOREGROUND) !important;
     --newtab-text-primary-color: var(--COLOR-FOREGROUND) !important;
     --newtab-primary-action-background: var(--COLOR-ACCENT-BRIGHT) !important;
-    --newtab-primary-action-background-dimmed var(--COLOR-ACCENT) !important;
-    
+    --newtab-primary-action-background-dimmed: var(--COLOR-ACCENT) !important;
     --in-content-page-background: var(--COLOR-BACKGROUND) !important;
     --in-content-page-color: var(--COLOR-FOREGROUND) !important;
+    --in-content-box-background: var(--COLOR-BACKGROUND) !important;    
+    --in-content-primary-button-background: var(--COLOR-ACCENT) !important;
+    --in-content-primary-button-background-hover: var(--COLOR-ACCENT-BRIGHT) !important;
+    --in-content-primary-button-background-active: var(--COLOR-ACCENT-BRIGHT) !important;
+    --color-accent-primary: var(--COLOR-ACCENT) !important;
+    --color-accent-primary-hover: var(--COLOR-ACCENT-BRIGHT) !important;
+    --color-accent-primary-active: var(--COLOR-ACCENT-BRIGHT) !important;
+    --button-background-color: var(--COLOR-BACKGROUND) !important;
+    --button-background-color-hover: var(--COLOR-BLACK) !important;
+    --button-background-color-active: var(--COLOR-BLACK-BRIGHT) !important;
+    --border-interactive-color: var(--COLOR-WHITE) !important;
     --focus-outline-color: var(--COLOR-ACCENT-BRIGHT) !important;
 }
