@@ -25,6 +25,10 @@ case "$1" in
   then
 	 RESULT=$ICON_GIT
 	fi
+	if grep -q "taskwarrior-tui" <<< $2;
+  then
+	 RESULT=$ICON_LIST
+	fi
 	if grep -q "unimatrix\|pipes.sh" <<< $2;
   then
 	 RESULT=$ICON_SCREENSAVOR

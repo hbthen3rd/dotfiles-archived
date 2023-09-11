@@ -156,29 +156,51 @@ sketchybar --add item seperator.l2 left                   \
 # We add some regular items to the left side of the bar
 # only the properties deviating from the current defaults need to be set
 
-sketchybar --add item chat left                               \
-           --set      chat script="$PLUGIN_DIR/noti_slack.sh" \
-                           update_freq=60                     \
-                           padding_left=8                     \
-                           padding_right=2                    \
-                           background.border_width=0          \
-                           background.height=24               \
-                           icon=$ICON_CHAT                    \
-                           icon.color=$COLOR_WHITE            \
-                           label.color=$COLOR_WHITE           \
-                                                              \
-           --add item mail left                               \
-           --set      mail script="$PLUGIN_DIR/noti_mail.sh"  \
-                           update_freq=60                     \
-                           padding_left=2                     \
-                           padding_right=8                    \
-                           background.border_width=0          \
-                           background.height=24               \
-                           icon=$ICON_MAIL                    \
-                           icon.color=$COLOR_BLUE             \
-                           label.color=$COLOR_BLUE
+sketchybar --add item slack left                                     \
+           --set      slack script="$PLUGIN_DIR/noti_slack.sh"       \
+                           update_freq=60                            \
+                           padding_left=8                            \
+                           padding_right=2                           \
+                           background.border_width=0                 \
+                           background.height=24                      \
+                           icon=$ICON_CHAT                           \
+                           icon.color=$COLOR_WHITE                   \
+                           label.color=$COLOR_WHITE                  \
+                                                                     \
+           --add item mail left                                      \
+           --set      mail script="$PLUGIN_DIR/noti_mail.sh"         \
+                           update_freq=60                            \
+                           padding_left=2                            \
+                           padding_right=2                           \
+                           background.border_width=0                 \
+                           background.height=24                      \
+                           icon=$ICON_MAIL                           \
+                           icon.color=$COLOR_BLUE                    \
+                           label.color=$COLOR_BLUE                   \
+                                                                     \
+           --add item taskwarrior left                               \
+           --set      taskwarrior script="$PLUGIN_DIR/noti_task.sh"  \
+                                  update_freq=120                    \
+                                  padding_left=2                     \
+                                  padding_right=2                    \
+                                  background.border_width=0          \
+                                  background.height=24               \
+                                  icon=$ICON_LIST                    \
+                                  icon.color=$COLOR_CYAN             \
+                                  label.color=$COLOR_CYAN            \
+                                                                     \
+           --add item timewarrior left                               \
+           --set      timewarrior script="$PLUGIN_DIR/noti_timew.sh" \
+                                  update_freq=120                    \
+                                  padding_left=2                     \
+                                  padding_right=8                    \
+                                  background.border_width=0          \
+                                  background.height=24               \
+                                  icon=$ICON_CLOCK                   \
+                                  icon.color=$COLOR_YELLOW           \
+                                  label.color=$COLOR_YELLOW
 
-sketchybar --add bracket notifications chat mail                           \
+sketchybar --add bracket notifications slack mail taskwarrior timewarrior  \
            --set         notifications background.color=$COLOR_BACKGROUND  \
                                        background.border_color=$COLOR_CYAN
 
