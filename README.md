@@ -125,5 +125,6 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 - [`neofetch`](https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew)
 - [pipes-sh (`pipes.sh`)](https://formulae.brew.sh/formula/pipes-sh)
 - `ps` > [`procs`](https://github.com/dalance/procs#homebrew)
+- [`taskwarrior`](https://taskwarrior.org/download/#distributions)
 - [`tty-clock`](https://formulae.brew.sh/formula/tty-clock)
 - [`unimatrix`](https://github.com/will8211/unimatrix): `pip3 install git+https://github.com/will8211/unimatrix.git`
