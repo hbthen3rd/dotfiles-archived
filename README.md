@@ -1,5 +1,13 @@
 # hb's dotfiles
 
+_Notes: this repo contains submodules, use `--recurse-submodules` when cloning this repo to get all the modules:_
+
+```bash
+git clone --recurse-submodules https://github.com/hbthen3rd/dotfiles.git
+# or
+git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
+```
+
 ## Screenshots
 
 ![Screenshot 1](/ss1.png?raw=true 'Screenshot 1')
