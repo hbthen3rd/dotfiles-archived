@@ -109,7 +109,7 @@ fi
 alias cat="bat"
 alias find="fd"
 alias grep="rg"
-alias ls="exa --icons"
+alias ls="eza --icons"
 alias ps="procs"
 alias vim="nvim"
 

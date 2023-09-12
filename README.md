@@ -121,7 +121,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 - [`fzf`](https://github.com/junegunn/fzf#using-homebrew)
   - `fzf` `fd` integration in part of [shell config](/.zshrc)
 - `grep` > [ripgrep (`rg`)](https://github.com/BurntSushi/ripgrep#installation)
-- `ls` > [`exa`](https://github.com/ogham/exa#homebrew)
+- `ls` > [`eza`](https://github.com/eza-community/eza#brew-macos)
 - [`neofetch`](https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew)
 - [pipes-sh (`pipes.sh`)](https://formulae.brew.sh/formula/pipes-sh)
 - `ps` > [`procs`](https://github.com/dalance/procs#homebrew)
