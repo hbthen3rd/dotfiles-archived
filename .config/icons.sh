@@ -15,6 +15,7 @@ export ICON_PACKAGE=󰏓 # brew
 export ICON_DEV=󰅨 # nvim, xcode, vscode
 export ICON_FILE=󰉋 # ranger, finder
 export ICON_GIT=󰊢 # lazygit
+export ICON_LIST=󱃔 # taskwarrior, taskwarrior-tui, reminders, onenote
 export ICON_SCREENSAVOR=󱄄 # unimatrix, pipe.sh
 
 export ICON_WEATHER=󰖕 # weather
@@ -25,7 +26,6 @@ export ICON_MICROPHONE=󰍬 # voice memos
 export ICON_CHAT=󰍩 # messages, slack, teams, discord, telegram
 export ICON_VIDEOCHAT=󰍫 # facetime, zoom, webex
 export ICON_NOTE=󱞎 # notes, textedit, stickies, word, bat
-export ICON_LIST=󱃔 # reminders, onenote
 export ICON_CAMERA=󰄀 # photo booth
 export ICON_WEB=󰇧 # safari, beam, duckduckgo, arc, edge, chrome, firefox
 export ICON_HOMEAUTOMATION=󱉑 # home
@@ -44,7 +44,7 @@ export ICON_CLOUD=󰅧 # onedrive
 export ICON_PEN=󰏬 # curve
 export ICON_REMOTEDESKTOP=󰢹 # vmware, utm
 
-export ICON_CLOCK=󰥔 # clock, tty-clock
+export ICON_CLOCK=󰥔 # clock, timewarrior, tty-clock
 export ICON_CALENDAR=󰃭 # calendar
 
 export ICON_WIFI=󰖩

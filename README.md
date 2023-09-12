@@ -1,10 +1,18 @@
 # hb's dotfiles
 
+_Notes: this repo contains submodules, use `--recurse-submodules` when cloning this repo to get all the modules:_
+
+```bash
+git clone --recurse-submodules https://github.com/hbthen3rd/dotfiles.git
+# or
+git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
+```
+
 ## Screenshots
 
-![Screenshot 1](/ss1.png?raw=true 'Screenshot 1')
-![Screenshot 2](/ss2.png?raw=true 'Screenshot 2')
-![Screenshot 3](/ss3.png?raw=true 'Screenshot 3')
+![Screenshot 1](/screenshot_1.png?raw=true 'Screenshot 1')
+![Screenshot 2](/screenshot_2.png?raw=true 'Screenshot 2')
+![Screenshot 3](/screenshot_3.png?raw=true 'Screenshot 3')
 
 ## Machine + OS
 
@@ -57,7 +65,7 @@
 
 ## Code Editor + Git Manager
 
-### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux)
+### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) / [Neovide](https://neovide.dev/installation.html#homebrew)
 
 - Plugin manager + Starter template: [LazyVim](https://www.lazyvim.org/installation)
 - Misc:
@@ -117,5 +125,8 @@
 - [`neofetch`](https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew)
 - [pipes-sh (`pipes.sh`)](https://formulae.brew.sh/formula/pipes-sh)
 - `ps` > [`procs`](https://github.com/dalance/procs#homebrew)
+- [Taskwarrior (`task`)](https://taskwarrior.org/download/#distributions)
+  - [Timewarrior (`timew`)](https://timewarrior.net/docs/install/#distributions)
+  - [`taskwarrior-tui`](https://kdheepak.com/taskwarrior-tui/installation/)
 - [`tty-clock`](https://formulae.brew.sh/formula/tty-clock)
 - [`unimatrix`](https://github.com/will8211/unimatrix): `pip3 install git+https://github.com/will8211/unimatrix.git`

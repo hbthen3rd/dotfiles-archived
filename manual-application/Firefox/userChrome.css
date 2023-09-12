@@ -43,12 +43,17 @@
     --toolbar-field-border-color: var(--COLOR-BLACK-BRIGHT) !important;
     --toolbar-field-focus-background-color: var(--COLOR-BLACK) !important;
     --toolbar-field-focus-color: var(--COLOR-FOREGROUND) !important;
+    --input-border-color: var(--COLOR-BLACK-BRIGHT) !important;
+    --input-bgcolor: var(--COLOR-BACKGROUND) !important;
+    --input-color: var(--COLOR-FOREGROUND) !important;
+    --autocomplete-popup-highlight-background: var(--COLOR-ACCENT-BRIGHT) !important;
     --button-bgcolor: var(--COLOR-BACKGROUND) !important;
     --button-hover-bgcolor: var(--COLOR-BLACK-BRIGHT) !important;
     --button-active-bgcolor: var(--COLOR-WHITE) !important;
     --button-primary-bgcolor: var(--COLOR-ACCENT) !important;
     --button-primary-hover-bgcolor: var(--COLOR-ACCENT-BRIGHT) !important;
     --button-primary-active-bgcolor: var(--COLOR-ACCENT-BRIGHT) !important;
+    --button-primary-color: var(--COLOR-FOREGROUND) !important;
     --lwt-brighttext-url-color: var(--COLOR-ACCENT-BRIGHT) !important;
     --lwt-toolbarbutton-icon-fill-attention: var(--COLOR-ACCENT-BRIGHT) !important;
     --pocket-icon-fill: var(--COLOR-RED) !important;
