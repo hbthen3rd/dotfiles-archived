@@ -65,7 +65,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Code Editor + Git Manager
 
-### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux)
+### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) / [Neovide](https://neovide.dev/installation.html#homebrew)
 
 - Plugin manager + Starter template: [LazyVim](https://www.lazyvim.org/installation)
 - Misc:

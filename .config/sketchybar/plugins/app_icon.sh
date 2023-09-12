@@ -102,7 +102,7 @@ case "$1" in
 "Books")
 	RESULT=$ICON_BOOK
 	;;
-"Xcode" | "Code")
+"Xcode" | "Code" | "Neovide")
 	RESULT=$ICON_DEV
 	;;
 "Font Book" | "Dictionary")
