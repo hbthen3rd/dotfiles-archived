@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.productIconTheme": "fluent-icons",
+
+    "window.titleBarStyle": "native",
+    "apc.electron": {
+        "frame": false
+    },
+
+    "editor.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.minimap.autohide": true,
+
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+
+    "git.autofetch": true
+}

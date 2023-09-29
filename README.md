@@ -16,21 +16,17 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Machine + OS
 
-- M2 MacBook Air / macOS Ventura 13.5
+- M2 MacBook Air / macOS Sonoma 14.0
 
 ## Desktop
+
+### [Gruvbox Wallpapers](https://github.com/AngelJumbo/gruvbox-wallpapers)
 
 ### [yabai](https://github.com/koekeishiya/yabai)
 
 - System Preferences > Desktop and Dock (**bold** is required):
-  - **Mission Control: uncheck "Automatically rearrange Spaces based on most recent use".**
-- _Some advanced features of `yabai` [requires SIP to be disabled](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)._ _**However, disabling SIP will also disable Apple Pay on your Mac.**_ **For my setup, I left SIP enabled. My configs doesn't use any advanced feature from `yabai`.**
-
-### [skhd](https://github.com/koekeishiya/skhd)
-
-- System Preferences > Keyboard > Keyboard Shortcuts... (**bold** is required):
-  - For each of the item on the left side bar > click "Restore Defaults"
-  - **Mission Control > Make sure everything under Mission Control is checked (Move left/right, switch to desktop 1/2/etc.)**
+  - **Mission Control: uncheck "Automatically rearrange Spaces based on most recent use"**
+- _Some advanced features of `yabai` [requires SIP to be disabled](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)._ _**However, disabling SIP will also disable Apple Pay on your Mac.**_ **For my setup, I left SIP enabled. My configs doesn't use any advanced feature from `yabai`**
 
 ### [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
@@ -39,6 +35,12 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 - System Preferences > Desktop and Dock (**bold** is required):
   - Dock: check "Automatically hide and show the Dock"
   - **Menu Bar: set "Automatically hide and show the menu bar" to "Always"**
+
+### [skhd](https://github.com/koekeishiya/skhd)
+
+- System Preferences > Keyboard > Keyboard Shortcuts... (**bold** is required):
+  - For each of the item on the left side bar > click "Restore Defaults"
+  - **Mission Control > Make sure everything under Mission Control is checked (Move left/right, switch to desktop 1/2/etc.)**
 
 ### [Alfred](https://www.alfredapp.com/)
 
@@ -63,13 +65,39 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ### [Homebrew](https://brew.sh/)
 
-## Code Editor + Git Manager
+## Code Editor
 
-### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) / [Neovide](https://neovide.dev/installation.html#homebrew)
+### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) + [Neovide](https://neovide.dev/installation.html#homebrew)
 
 - Plugin manager + Starter template: [LazyVim](https://www.lazyvim.org/installation)
+  - [`rg`](https://github.com/BurntSushi/ripgrep#installation)
+  - [`fd`](https://github.com/sharkdp/fd#on-macos)
+  - [`lazygit`](https://github.com/jesseduffield/lazygit#homebrew)
 - Misc:
-  - Run `:checkhealth` in `nvim` and install all dependencies
+  - Run `:checkhealth` and install all dependencies
+  - [pynvim](https://github.com/neovim/pynvim#install)
+  - [neovim ruby](https://github.com/neovim/neovim-ruby#installation)
+  - [neovim node](https://github.com/neovim/node-client#installation)
+  - [neovim perl](https://neovim.io/doc/user/provider.html#provider-perl)
+
+# [Visual Studio Code](https://code.visualstudio.com/)
+  - Fonts:
+    - Editor: [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/latest)
+    - Terminal: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
+  - [Gruvbox Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox)
+  - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+  - [Fluent Icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
+  - [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension)
+    - Allow VSCode to modify itself:
+      ```bash
+      sudo chown -R $(whoami) $(which code)
+      sudo chown -R $(whoami) /Applications/Visual Studio Code.app/Contents/Resources/app/out
+      ```
+  - Apply [`settings.json`](/manual-application/VSCode/settings.json)
+  - Open Command Palette by pressing `cmd` + `shift` + `P` > enter `Enable Apc extension` > hit `return`
+  - Quit and restart VSCode
+
+## Git Manager
 
 ### [Lazygit](https://github.com/jesseduffield/lazygit#homebrew)
 
@@ -97,6 +125,11 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [odt2txt](https://formulae.brew.sh/formula/odt2txt)
   - [w3m](https://formulae.brew.sh/formula/w3m)
   - [jq](https://formulae.brew.sh/formula/jq)
+
+### Finder.app
+
+- `cmd` + `3` to View as Columns
+- `cmd` + `shift` + `.` to Show Hidden files
 
 ## Web Browser
 

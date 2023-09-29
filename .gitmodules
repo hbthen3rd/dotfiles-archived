@@ -13,3 +13,6 @@
 [submodule "manual-application/Alfred/custom-alfred-iterm-scripts"]
 	path = manual-application/Alfred/custom-alfred-iterm-scripts
 	url = https://github.com/vitorgalvao/custom-alfred-iterm-scripts.git
+[submodule "manual-application/gruvbox-wallpapers"]
+	path = manual-application/gruvbox-wallpapers
+	url = https://github.com/AngelJumbo/gruvbox-wallpapers.git
