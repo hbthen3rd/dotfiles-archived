@@ -141,7 +141,7 @@ case "$1" in
 "Curve")
 	RESULT=$ICON_PEN
 	;;
-"VMware Fusion" | "UTM")
+"Microsoft Remote Desktop" | "VMware Fusion" | "UTM")
 	RESULT=$ICON_REMOTEDESKTOP
 	;;
 *)

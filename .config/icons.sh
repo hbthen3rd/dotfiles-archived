@@ -42,7 +42,7 @@ export ICON_TABLE=󰓫 # excel
 export ICON_PRESENT=󰈩 # powerpoint
 export ICON_CLOUD=󰅧 # onedrive
 export ICON_PEN=󰏬 # curve
-export ICON_REMOTEDESKTOP=󰢹 # vmware, utm
+export ICON_REMOTEDESKTOP=󰢹 # remote desktop, vmware, utm
 
 export ICON_CLOCK=󰥔 # clock, timewarrior, tty-clock
 export ICON_CALENDAR=󰃭 # calendar
