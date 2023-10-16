@@ -10,7 +10,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
-![btop, neofetch, tty-clock, unimatrix, pipes.sh](/Screenshot_1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
+![btop, neofetch, tty-clock, unimatrix, pipes-sh](/Screenshot_1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes-sh')
 ![lazygit, neovim, bat](/Screenshot_2.png?raw=true 'lazygit, neovim, bat')
 ![Firefox, ranger, eza, Alfred](/Screenshot_3.png?raw=true 'Firefox, ranger, eza, Alfred')
 ![Finder](/Screenshot_4.png?raw=true 'Finder')
