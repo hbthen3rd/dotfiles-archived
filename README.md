@@ -10,9 +10,12 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
-![Screenshot 1](/screenshot_1.png?raw=true 'Screenshot 1')
-![Screenshot 2](/screenshot_2.png?raw=true 'Screenshot 2')
-![Screenshot 3](/screenshot_3.png?raw=true 'Screenshot 3')
+![btop, neofetch, tty-clock, unimatrix, pipes.sh](/Screenshot_1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
+![lazygit, neovim, bat](/Screenshot_2.png?raw=true 'lazygit, neovim, bat')
+![Firefox, ranger, eza, Alfred](/Screenshot_3.png?raw=true 'Firefox, ranger, eza, Alfred')
+![Finder](/Screenshot_4.png?raw=true 'Finder')
+![Visual Studio Code](/Screenshot_5.png?raw=true 'Visual Studio Code')
+![Firefox](/Screenshot_6.png?raw=true 'Firefox')
 
 ## Machine + OS
 
@@ -126,7 +129,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [w3m](https://formulae.brew.sh/formula/w3m)
   - [jq](https://formulae.brew.sh/formula/jq)
 
-### Finder.app
+### Finder
 
 - `cmd` + `3` to View as Columns
 - `cmd` + `shift` + `.` to Show Hidden files
