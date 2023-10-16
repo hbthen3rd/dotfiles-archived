@@ -10,12 +10,12 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
-![btop, neofetch, tty-clock, unimatrix, pipes-sh](/Screenshot_1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes-sh')
-![lazygit, neovim, bat](/Screenshot_2.png?raw=true 'lazygit, neovim, bat')
-![Firefox, ranger, eza, Alfred](/Screenshot_3.png?raw=true 'Firefox, ranger, eza, Alfred')
-![Finder](/Screenshot_4.png?raw=true 'Finder')
-![Visual Studio Code](/Screenshot_5.png?raw=true 'Visual Studio Code')
-![Firefox](/Screenshot_6.png?raw=true 'Firefox')
+![btop, neofetch, tty-clock, unimatrix, pipes.sh](/ss1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
+![lazygit, neovim, bat](/ss2.png?raw=true 'lazygit, neovim, bat')
+![Firefox, ranger, eza, Alfred](/ss3.png?raw=true 'Firefox, ranger, eza, Alfred')
+![Finder](/ss4.png?raw=true 'Finder')
+![Visual Studio Code](/ss5.png?raw=true 'Visual Studio Code')
+![Firefox](/ss6.png?raw=true 'Firefox')
 
 ## Machine + OS
 
