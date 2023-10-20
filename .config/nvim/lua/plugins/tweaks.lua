@@ -1,5 +1,5 @@
 return {
-  -- add ayu
+  -- add gruvbox
   {
     "ellisonleao/gruvbox.nvim",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -11,7 +11,7 @@ return {
       })
     end,
   },
-  -- Configure LazyVim to load ayu
+  -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
