@@ -16,3 +16,6 @@
 [submodule "manual-application/gruvbox-wallpapers"]
 	path = manual-application/gruvbox-wallpapers
 	url = https://github.com/AngelJumbo/gruvbox-wallpapers.git
+[submodule "get-borderless-arc"]
+	path = manual-application/Arc/get-borderless-arc
+	url = https://github.com/ifvictr/get-borderless-arc.git
