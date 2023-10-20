@@ -10,12 +10,12 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
-![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshot1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
-![lazygit, neovim, bat](/screenshot2.png?raw=true 'lazygit, neovim, bat')
-![Firefox, ranger, eza, Alfred](/screenshot3.png?raw=true 'Firefox, ranger, eza, Alfred')
-![Finder](/screenshot4.png?raw=true 'Finder')
-![Visual Studio Code](/screenshot5.png?raw=true 'Visual Studio Code')
-![Firefox](/screenshot6.png?raw=true 'Firefox')
+| | | | |
+| :- | :-: | :-: | :-: |
+| Tiling | ![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshots/tiling1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes.sh') `btop`, `neofetch`, `tty-clock`, `unimatrix`, `pipes.sh` | ![lazygit, neovim, bat](/screenshots/tiling2.png?raw=true 'lazygit, neovim, bat') `lazygit`, `neovim`, `bat` | ![Firefox, ranger, eza, Alfred](/screenshots/tiling3.png?raw=true 'Firefox, ranger, eza, Alfred') Firefox, `ranger`, `eza`, Alfred |
+| Code Editor | ![neovim](/screenshots/code_neovim.png?raw=true 'neovim') `neovim` | ![Neovide](/screenshots/code_neovide.png?raw=true 'Neovide') Neovide | ![Visual Studio Code](/screenshots/code_vscode.png?raw=true 'Visual Studio Code') Visual Studio Code |
+| File Manager | ![ranger](/screenshots/file_ranger.png?raw=true 'ranger') `ranger` | ![Finder](/screenshots/file_finder.png?raw=true 'Finder') Finder | - |
+| Web Browser | ![Firefox](/screenshots/web_firefox.png?raw=true 'Firefox') Firefox | ![Arc](/screenshots/web_arc.png?raw=true 'Arc') Arc | - |
 
 ## Machine + OS
 
