@@ -149,6 +149,10 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - **Only Dark theme is supported, no light theme or high-contrast theme support**
 - System Preferences > Desktop and Dock > Default web browser: Firefox
 
+### [Arc](https://arc.net/)
+
+- [get-borderless-arc](https://github.com/ifvictr/get-borderless-arc)
+
 ## Other tools
 
 - [`btop`](https://github.com/aristocratos/btop#installation)
