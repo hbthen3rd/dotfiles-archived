@@ -10,17 +10,11 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
-![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshots/tiling1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
+![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshots/_screenshot1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
 
-![lazygit, neovim, bat](/screenshots/tiling2.png?raw=true 'lazygit, neovim, bat')
+![lazygit, neovim, bat](/screenshots/_screenshot2.png?raw=true 'lazygit, neovim, bat')
 
-![Firefox, ranger, eza, Alfred](/screenshots/tiling3.png?raw=true 'Firefox, ranger, eza, Alfred')
-
-| Tool | Main | Fallback |
-| :- | :-: | :-: |
-| Code Editor | ![neovim](/screenshots/code_neovim.png?raw=true 'neovim') `neovim` | ![Visual Studio Code](/screenshots/code_vscode.png?raw=true 'Visual Studio Code') Visual Studio Code |
-| File Manager | ![ranger](/screenshots/file_ranger.png?raw=true 'ranger') `ranger` | ![Finder](/screenshots/file_finder.png?raw=true 'Finder') Finder |
-| Web Browser | ![Firefox](/screenshots/web_firefox.png?raw=true 'Firefox') Firefox | ![Arc](/screenshots/web_arc.png?raw=true 'Arc') Arc |
+![Firefox, ranger, eza, Alfred](/screenshots/_screenshot3.png?raw=true 'Firefox, ranger, eza, Alfred')
 
 ## Machine + OS
 
@@ -75,6 +69,14 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Code Editor
 
+| | Neovim | Visual Studio Code |
+| :- | :-: | :-: |
+| Intellisense | ![neovim intellisense](/screenshots/code_neovim_intellisense.png?raw=true 'neovim intellisense') | ![Visual Studio Code intellisense](/screenshots/code_vscode_intellisense.png?raw=true 'Visual Studio Code intellisense') |
+| Terminal | ![neovim terminal](/screenshots/code_neovim_terminal.png?raw=true 'neovim terminal') | ![Visual Studio Code terminal](/screenshots/code_vscode_terminal.png?raw=true 'Visual Studio Code terminal') |
+| File search | ![neovim file search](/screenshots/code_neovim_filesearch.png?raw=true 'neovim file search') | ![Visual Studio Code file search](/screenshots/code_vscode_filesearch.png?raw=true 'Visual Studio Code file search') |
+| Source control | ![neovim source control](/screenshots/code_neovim_sourcecontrol.png?raw=true 'neovim source control') | ![Visual Studio Code source control](/screenshots/code_vscode_sourcecontrol.png?raw=true 'Visual Studio Code source control') |
+| Command palette | ![neovim command palette](/screenshots/code_neovim_commandpalette.png?raw=true 'neovim command palette') | ![Visual Studio Code command palette](/screenshots/code_vscode_commandpalette.png?raw=true 'Visual Studio Code command palette') |
+
 ### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) + [Neovide](https://neovide.dev/installation.html#homebrew)
 
 - Plugin manager + Starter template: [LazyVim](https://www.lazyvim.org/installation)
@@ -105,11 +107,16 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - Open Command Palette by pressing `cmd` + `shift` + `P` > enter `Enable Apc extension` > hit `return`
   - Quit and restart VSCode
 
-## Git Manager
+## Source Control
 
 ### [Lazygit](https://github.com/jesseduffield/lazygit#homebrew)
 
 ## File Manager
+
+| | Ranger | Finder |
+| :- | :-: | :-: |
+| Code preview | ![ranger code preview](/screenshots/file_ranger_code.png?raw=true 'ranger code preview') | ![Finder code preview](/screenshots/file_finder_code.png?raw=true 'Finder code preview') |
+| Image preview | ![ranger image preview](/screenshots/file_ranger_image.png?raw=true 'ranger image preview') | ![Finder image preview](/screenshots/file_finder_image.png?raw=true 'Finder image preview') |
 
 ### [Ranger](https://github.com/ranger/ranger)
 
@@ -140,6 +147,11 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 - `cmd` + `shift` + `.` to Show Hidden files
 
 ## Web Browser
+
+| | Firefox | Arc |
+| :- | :-: | :-: |
+| Web page | ![Firefox web page](/screenshots/web_firefox_webpage.png?raw=true 'Firefox web page') | ![Arc web page](/screenshots/web_arc_webpage.png?raw=true 'Arc web page') |
+| New tab page | ![Firefox new tab page](/screenshots/web_firefox_newtab.png?raw=true 'Firefox new tab page') | ![Arc new tab page](/screenshots/web_arc_newtab.png?raw=true 'Arc new tab page') |
 
 ### [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
