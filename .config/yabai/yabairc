@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+source "$HOME/.config/colors.sh"
+
 #
 # for this to work you must configure sudo such that
 # it will be able to run the command without password
@@ -30,10 +32,10 @@ yabai -m config \
 	split_type auto \
 	auto_balance off \
 	top_padding 8 \
-	bottom_padding 8 \
-	left_padding 8 \
-	right_padding 8 \
-	window_gap 8 \
+	bottom_padding 12 \
+	left_padding 12 \
+	right_padding 12 \
+	window_gap 12 \
 	layout bsp \
 	mouse_modifier fn \
 	mouse_action1 move \
@@ -45,5 +47,7 @@ yabai -m rule --add app="^(System Settings|System Information|Activity Monitor|F
 
 yabai -m signal --add event=window_created action="sketchybar -m --trigger window_change &> /dev/null"
 yabai -m signal --add event=window_destroyed action="sketchybar -m --trigger window_change &> /dev/null"
+
+borders active_color=$COLOR_ACCENT_BRIGHT inactive_color=$COLOR_BACKGROUND width=4.0 2>/dev/null 1>&2 &
 
 echo "yabai configuration loaded.."

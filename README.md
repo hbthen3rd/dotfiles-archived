@@ -31,18 +31,22 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - Desktop & Stage Manager:
     - Show Items: uncheck "On Desktop"
     - Set "Click wallpaper to reveal desktop" to "Always"
-  - Desktop & Stage Manager > Widgets:
+  - Widgets:
     - Show Widgets: uncheck "On Desktop"
     - Set "Widget style" to "Full-color"
 - _Some advanced features of `yabai` [requires SIP to be disabled](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)._ _**However, disabling SIP will also disable Apple Pay on your Mac.**_ **For my setup, I left SIP enabled. My configs doesn't use any advanced feature from `yabai`**
+
+### [JankyBorders](https://github.com/FelixKratz/JankyBorders)
 
 ### [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
 - Font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 - **Creates exactly 7 workspaces/desktops**
-- System Preferences > Desktop and Dock (**bold** is required):
-  - Dock: check "Automatically hide and show the Dock"
-  - **Menu Bar: set "Automatically hide and show the menu bar" to "Always"**
+- System Preferences (**bold** is required):
+  - Desktop and Dock > Dock:
+    - Check "Automatically hide and show the Dock"
+  - Control Center > Menu Bar Only:
+  - **Set "Automatically hide and show the menu bar" to "Always"**
 
 ### [skhd](https://github.com/koekeishiya/skhd)
 
