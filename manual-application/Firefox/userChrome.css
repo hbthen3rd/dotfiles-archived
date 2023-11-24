@@ -93,6 +93,23 @@
     display: none;
 }
 
+/* Gruvbox color tweaks */
+toolbox#navigator-toolbox {
+    background-color: var(--COLOR-BACKGROUND) !important;
+}
+toolbar#PersonalToolbar.browser-toolbar {
+    background-color: var(--COLOR-BACKGROUND) !important;
+}
+tabs#tabbrowser-tabs tab.tabbrowser-tab {
+    color: var(--COLOR-FOREGROUND) !important;
+}
+tabs#tabbrowser-tabs tab.tabbrowser-tab vbox.tab-background:is([selected], [multiselected]) {
+    background-color: var(--COLOR-BLACK) !important;
+}
+tabs#tabbrowser-tabs tab.tabbrowser-tab:hover vbox.tab-background:not([selected], [multiselected]) {
+    background-color: var(--COLOR-BLACK) !important;
+}
+
 /* Layout tweaks on top of Firefox-Onebar */
 #navigator-toolbox {
     flex-direction: row-reverse !important;
@@ -115,18 +132,24 @@
 /*************** https://codeberg.org/Freeplay/Firefox-Onebar ***************/
 
 /* about:config
-onebar.disable-autohide-of-URLbar-icons : false
-onebar.disable-centering-of-URLbar      : false
-onebar.disable-https-truncate           : false
-onebar.disable-single-tab               : true
 onebar.hide-all-URLbar-icons            : true
+onebar.disable-autohide-of-URLbar-icons : false
+onebar.disable-https-truncate           : false
+onebar.disable-centering-of-URLbar      : false
+onebar.disable-single-tab               : true
+onebar.hide-unified-extensions-button   : false
+onebar.hide-all-tabs-button             : false
+onebar.conditional-navigation-buttons   : false
 onebar.hide-navigation-buttons          : false
 */
 
-/* 1.4.1
-- Fixes
-- Fix padding in MacOS
-- Use proper windows media query
+/* 1.6.0
+- Added option to hide navigation buttons conditionally
+- The hide navigation buttons option has been changed, see customizations
+
+Missed past contributions:
+- Fixed preferences #21 @prodrigestivill
+- #19 @techfoxxo
 */
 
 :root {
@@ -185,14 +208,23 @@ toolbarspring,
     transition: background-color .2s;
 }
 
+@media (-moz-bool-pref: "onebar.hide-all-tabs-button") {
+    @media not (max-width: 700px) {
+        #alltabs-button {
+            display: none !important;
+        }
+    }
+}
+
 
 /* Navigation buttons */
-@supports -moz-bool-pref("onebar.hide-navigation-buttons") {
-    #back-button, #forward-button {
+@media (-moz-bool-pref: "onebar.conditional-navigation-buttons") {
+    :root:not([customizing]) #back-button[disabled],
+    :root:not([customizing]) #forward-button[disabled] {
         display: none !important;
     }
 }
-@supports not -moz-bool-pref("onebar.hide-navigation-buttons") {
+@media (-moz-bool-pref: "onebar.hide-navigation-buttons") {
     #urlbar-container ~ :is(#back-button, #forward-button) {
         display: none !important;
     }
@@ -206,7 +238,7 @@ toolbarspring,
 
     /* Add note in customize menu for nav buttons */
     #customization-header::after {
-        content: "To hide the back & forward buttons, simply drag them to the right of the URL bar";
+        content: "To hide the back & forward buttons, drag them to the right of the URL bar";
         background-color: blue;
         color: white;
         border-radius: 4px;
@@ -215,16 +247,16 @@ toolbarspring,
         display: block;
         width: max-content;
     }
-    :root[customizing] .urlbar-input-box {
-        visibility: visible !important;
-    }
-    :root[customizing] .urlbar-input-box::before {
-        content: "https://";
-        margin-block: auto;
-    }
-    :root[customizing] #urlbar-input {
-        display: none !important;
-    }
+}
+:root[customizing] .urlbar-input-box {
+    visibility: visible !important;
+}
+:root[customizing] .urlbar-input-box::before {
+    content: "https://";
+    margin-block: auto;
+}
+:root[customizing] #urlbar-input {
+    display: none !important;
 }
 
 
@@ -232,7 +264,7 @@ toolbarspring,
 
 
 /* Single Tab, *properties* also copy & pasted into "Small Window Fixes" */
-@supports not -moz-bool-pref("onebar.disable-single-tab") {
+@media (not (-moz-bool-pref: "onebar.disable-single-tab")) {
     #titlebar #tabbrowser-tabs .tabbrowser-tab:only-of-type {
         width: max-content !important;
         -moz-box-flex: unset !important;
@@ -295,7 +327,7 @@ toolbarspring,
     inset-inline: 20vw !important;
     width: unset !important;
 }
-@supports -moz-bool-pref("onebar.disable-centering-of-URLbar") {
+@media (-moz-bool-pref: "onebar.disable-centering-of-URLbar") {
     #urlbar-container {
         position: relative !important;
     }
@@ -305,6 +337,9 @@ toolbarspring,
     }
     #urlbar[breakout-extend] .urlbar-input-box {
         min-width: 400px !important;
+    }
+    #urlbar-container:focus-within, #urlbar-container:hover {
+        min-width: var(--urlbar-open-width) !important;
     }
 }
 #urlbar-input-container {
@@ -320,9 +355,6 @@ toolbarspring,
     min-width: 50px !important;
     transition: width .2s;
 }
-#urlbar-container:focus-within, #urlbar-container:hover {
-    min-width: var(--urlbar-open-width) !important;
-}
 #urlbar-input:not(:focus-within) {
     mask: linear-gradient(to right, black calc(100% - 20px), transparent);
 }
@@ -334,7 +366,7 @@ toolbarspring,
 }
 
 /* Truncate https:// when collapsed */
-@supports not -moz-bool-pref("onebar.disable-https-truncate") {
+@media (not (-moz-bool-pref: "onebar.disable-https-truncate")) and (not (-moz-bool-pref: "browser.urlbar.trimHttps")) {
     #urlbar-input {
         transition: margin .1s;
     }
@@ -355,12 +387,12 @@ toolbarspring,
     transition: var(--in-transition) !important;
     max-width: 200px;
 }
-@supports -moz-bool-pref("onebar.disable-autohide-of-URLbar-icons") {
+@media (-moz-bool-pref: "onebar.disable-autohide-of-URLbar-icons") {
     #urlbar-container {
         min-width: var(--urlbar-open-width) !important;
     }
 }
-@supports not -moz-bool-pref("onebar.disable-autohide-of-URLbar-icons") {
+@media (not (-moz-bool-pref: "onebar.disable-autohide-of-URLbar-icons")) {
     #urlbar-container:not(:hover) :where(
         toolbarbutton,
         #userContext-label,
@@ -377,7 +409,7 @@ toolbarspring,
         opacity: 0 !important;
         transition: var(--out-transition) !important;
     }
-    @supports -moz-bool-pref("onebar.hide-all-URLbar-icons") {
+    @media (-moz-bool-pref: "onebar.hide-all-URLbar-icons") {
         #urlbar-container:not(:hover) :where(#page-action-buttons, #identity-box) > * {
             font-size: 0 !important;
             max-width: 0 !important;
@@ -388,8 +420,8 @@ toolbarspring,
         }
     }
 }
-#navigator-toolbox-background #urlbar-container:focus-within #urlbar-input-container > box,
-#navigator-toolbox-background #urlbar-container:focus-within #page-action-buttons > * {
+#urlbar-container #urlbar[focused="true"] #urlbar-input-container > box,
+#urlbar-container #urlbar[focused="true"] #page-action-buttons > * {
     font-size: 0 !important;
     max-width: 0 !important;
     padding-inline: 0 !important;
@@ -412,6 +444,13 @@ toolbarspring,
 .titlebar-spacer,
 #identity-icon-label {
     display: none;
+}
+
+@media (-moz-bool-pref: "onebar.hide-unified-extensions-button") {
+    #unified-extensions-button, #unified-extensions-button > .toolbarbutton-icon{
+        width: 0px !important;
+        padding: 0px !important;
+    }
 }
 
 /* Wrap other toolbars to bottom */
@@ -609,7 +648,7 @@ toolbarspring,
         display: none !important;
     }
 
-    .tabbrowser-tab:not([visuallyselected="true"]) {
+    .tabbrowser-tab:not([visuallyselected]) {
         display: none !important;
     }
 }

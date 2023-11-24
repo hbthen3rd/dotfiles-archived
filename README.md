@@ -166,12 +166,17 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 ### [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 - [Firefox Onebar](https://codeberg.org/Freeplay/Firefox-Onebar) theme with the following `about:config`:
-  - `onebar.disable-autohide-of-URLbar-icons : false`
-  - `onebar.disable-centering-of-URLbar      : false`
-  - `onebar.disable-https-truncate           : false`
-  - `onebar.disable-single-tab               : true`
-  - `onebar.hide-all-URLbar-icons            : true`
-  - `onebar.hide-navigation-buttons          : false`
+  - ```
+    onebar.hide-all-URLbar-icons            : true
+    onebar.disable-autohide-of-URLbar-icons : false
+    onebar.disable-https-truncate           : false
+    onebar.disable-centering-of-URLbar      : false
+    onebar.disable-single-tab               : true
+    onebar.hide-unified-extensions-button   : false
+    onebar.hide-all-tabs-button             : false
+    onebar.conditional-navigation-buttons   : false
+    onebar.hide-navigation-buttons          : false
+    ```
 - Color and layout tweaks to [Browser XUL](/manual-application/Firefox/userChrome.css) and [`:about` pages](/manual-application/Firefox/userContent.css) to match Gruvbox Dark (Hard) color (Firefox Onebar included)
   - **Only Dark theme is supported, no light theme or high-contrast theme support**
 
