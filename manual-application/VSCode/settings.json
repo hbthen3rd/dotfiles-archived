@@ -12,7 +12,7 @@
     "editor.fontLigatures": true,
     "editor.minimap.autohide": true,
 
-    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
 
