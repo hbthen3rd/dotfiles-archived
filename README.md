@@ -124,7 +124,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 | Source control | ![neovim source control](/screenshots/neovim_sourcecontrol.png 'neovim source control') | ![Zed source control](/screenshots/zed_sourcecontrol.png 'Zed source control') |
 | Command palette | ![neovim command palette](/screenshots/neovim_commandpalette.png 'neovim command palette') | ![Zed command palette](/screenshots/zed_commandpalette.png 'Zed command palette') |
 
-### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) + [Neovide](https://neovide.dev/installation.html#homebrew)
+### [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) + [Neovide](https://neovide.dev/installation.html#homebrew)
 
 - Plugin manager + Starter template: [LazyVim](https://www.lazyvim.org/installation)
   - [`rg`](https://github.com/BurntSushi/ripgrep#installation)
