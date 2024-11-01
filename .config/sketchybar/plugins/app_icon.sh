@@ -102,7 +102,7 @@ case "$1" in
 "Books")
 	RESULT=$ICON_BOOK
 	;;
-"Xcode" | "Code" | "Neovide" | "IntelliJ IDEA")
+"Xcode" | "Code" | "Zed" | "Neovide" | "IntelliJ IDEA")
 	RESULT=$ICON_DEV
 	;;
 "Font Book" | "Dictionary")
@@ -123,7 +123,7 @@ case "$1" in
 "NordVPN")
 	RESULT=$ICON_VPN
 	;;
-"Progressive Downloaded" | "Transmission")
+"Progressive Downloaded" | "Transmission" | "WebTorrent")
 	RESULT=$ICON_DOWNLOAD
 	;;
 "Airflow")
@@ -141,7 +141,7 @@ case "$1" in
 "Curve")
 	RESULT=$ICON_PEN
 	;;
-"Microsoft Remote Desktop" | "VMware Fusion" | "UTM")
+"Remote Desktop Manager" | "Windows App" | "VMware Fusion" | "UTM")
 	RESULT=$ICON_REMOTEDESKTOP
 	;;
 *)

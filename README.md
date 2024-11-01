@@ -10,6 +10,8 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
+_to be replaced_
+
 ![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshots/_screenshot1.png 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
 
 ![lazygit, neovim, bat](/screenshots/_screenshot2.png 'lazygit, neovim, bat')
@@ -20,20 +22,21 @@ _to be replaced_
 
 ## Machine + OS
 
-- M2 MacBook Air / macOS Sonoma 14.2.1
+- M2 MacBook Air / macOS Sequoia 15.1
 
 ## Desktop
 
 ### [yabai](https://github.com/koekeishiya/yabai)
 
 - System Preferences > Desktop and Dock (**bold** is required):
-  - **Mission Control: uncheck "Automatically rearrange Spaces based on most recent use"**
   - Desktop & Stage Manager:
     - Show Items: uncheck "On Desktop"
     - Set "Click wallpaper to reveal desktop" to "Always"
   - Widgets:
     - Show Widgets: uncheck "On Desktop"
     - Set "Widget style" to "Full-color"
+  - **Mission Control:**
+    - **Uncheck "Automatically rearrange Spaces based on most recent use"**
 - _Some advanced features of `yabai` [requires SIP to be disabled](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)._ _**However, disabling SIP will also disable Apple Pay on your Mac.**_ **For my setup, I left SIP enabled. My configs doesn't use any advanced feature from `yabai`**
 
 ### [JankyBorders](https://github.com/FelixKratz/JankyBorders)
@@ -43,10 +46,10 @@ _to be replaced_
 - Font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 - **Creates exactly 7 workspaces/desktops**
 - System Preferences (**bold** is required):
-  - Desktop and Dock > Dock:
-    - Check "Automatically hide and show the Dock"
-  - Control Center > Menu Bar Only:
-  - **Set "Automatically hide and show the menu bar" to "Always"**
+  - **Control Center > Menu Bar Only:**
+    - **Set "Automatically hide and show the menu bar" to "Always"**
+  - **Desktop and Dock > Dock:**
+    - **Check "Automatically hide and show the Dock"**
 
 ### [skhd](https://github.com/koekeishiya/skhd)
 
@@ -66,6 +69,8 @@ _to be replaced_
 - Font: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 - Color scheme: [Gruvbox Dark (Hard)](/manual-application/iTerm/Gruvbox%20Dark%20(Hard).itermcolors)
 - Profile: [Window tweaks](/manual-application/iTerm/Default.json) (Transparency, Blur radius, No Title Bar style)
+
+### [Warp](https://www.warp.dev/download)
 
 ### [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
@@ -114,6 +119,8 @@ _to be replaced_
 
 ## Code Editor
 
+_to be replaced_
+
 | | Neovim | Visual Studio Code |
 | :- | :-: | :-: |
 | Intellisense | ![neovim intellisense](/screenshots/code_neovim_intellisense.png 'neovim intellisense') | ![Visual Studio Code intellisense](/screenshots/code_vscode_intellisense.png 'Visual Studio Code intellisense') |
@@ -134,6 +141,8 @@ _to be replaced_
   - [neovim ruby](https://github.com/neovim/neovim-ruby#installation)
   - [neovim node](https://github.com/neovim/node-client#installation)
   - [neovim perl](https://neovim.io/doc/user/provider.html#provider-perl)
+
+### [Zed](https://zed.dev/download)
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
   - Fonts:
