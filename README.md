@@ -10,15 +10,11 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
-_to be replaced_
+![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshots/__screenshot1.png 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
 
-![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshots/_screenshot1.png 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
+![lazygit, neovim, bat](/screenshots/__screenshot2.png 'lazygit, neovim, bat')
 
-![lazygit, neovim, bat](/screenshots/_screenshot2.png 'lazygit, neovim, bat')
-
-_to be replaced_
-
-![Firefox, ranger, eza, Alfred](/screenshots/_screenshot3.png 'Firefox, ranger, eza, Alfred')
+![Zen Browser, ranger, eza, Alfred](/screenshots/__screenshot3.png 'Zen Browser, ranger, eza, Alfred')
 
 ## Machine + OS
 
@@ -86,8 +82,8 @@ _to be replaced_
 
 | | Ranger | Finder |
 | :- | :-: | :-: |
-| Code preview | ![ranger code preview](/screenshots/file_ranger_code.png 'ranger code preview') | ![Finder code preview](/screenshots/file_finder_code.png 'Finder code preview') |
-| Image preview | ![ranger image preview](/screenshots/file_ranger_image.png 'ranger image preview') | ![Finder image preview](/screenshots/file_finder_image.png 'Finder image preview') |
+| Code preview | ![ranger code preview](/screenshots/ranger_code.png 'ranger code preview') | ![Finder code preview](/screenshots/finder_code.png 'Finder code preview') |
+| Image preview | ![ranger image preview](/screenshots/ranger_image.png 'ranger image preview') | ![Finder image preview](/screenshots/finder_image.png 'Finder image preview') |
 
 ### [Ranger](https://github.com/ranger/ranger)
 
@@ -119,17 +115,16 @@ _to be replaced_
 
 ## Code Editor
 
-_to be replaced_
 
-| | Neovim | Visual Studio Code |
+| | neovim | Zed |
 | :- | :-: | :-: |
-| Intellisense | ![neovim intellisense](/screenshots/code_neovim_intellisense.png 'neovim intellisense') | ![Visual Studio Code intellisense](/screenshots/code_vscode_intellisense.png 'Visual Studio Code intellisense') |
-| Terminal | ![neovim terminal](/screenshots/code_neovim_terminal.png 'neovim terminal') | ![Visual Studio Code terminal](/screenshots/code_vscode_terminal.png 'Visual Studio Code terminal') |
-| File search | ![neovim file search](/screenshots/code_neovim_filesearch.png 'neovim file search') | ![Visual Studio Code file search](/screenshots/code_vscode_filesearch.png 'Visual Studio Code file search') |
-| Source control | ![neovim source control](/screenshots/code_neovim_sourcecontrol.png 'neovim source control') | ![Visual Studio Code source control](/screenshots/code_vscode_sourcecontrol.png 'Visual Studio Code source control') |
-| Command palette | ![neovim command palette](/screenshots/code_neovim_commandpalette.png 'neovim command palette') | ![Visual Studio Code command palette](/screenshots/code_vscode_commandpalette.png 'Visual Studio Code command palette') |
+| Intellisense | ![neovim intellisense](/screenshots/neovim_intellisense.png 'neovim intellisense') | ![Zed intellisense](/screenshots/zed_intellisense.png 'Zed intellisense') |
+| Terminal | ![neovim terminal](/screenshots/neovim_terminal.png 'neovim terminal') | ![Zed terminal](/screenshots/zed_terminal.png 'Zed terminal') |
+| File search | ![neovim file search](/screenshots/neovim_filesearch.png 'neovim file search') | ![Zed file search](/screenshots/zed_filesearch.png 'Zed file search') |
+| Source control | ![neovim source control](/screenshots/neovim_sourcecontrol.png 'neovim source control') | ![Zed source control](/screenshots/zed_sourcecontrol.png 'Zed source control') |
+| Command palette | ![neovim command palette](/screenshots/neovim_commandpalette.png 'neovim command palette') | ![Zed command palette](/screenshots/zed_commandpalette.png 'Zed command palette') |
 
-### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) + [Neovide](https://neovide.dev/installation.html#homebrew)
+### [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) + [Neovide](https://neovide.dev/installation.html#homebrew)
 
 - Plugin manager + Starter template: [LazyVim](https://www.lazyvim.org/installation)
   - [`rg`](https://github.com/BurntSushi/ripgrep#installation)
@@ -162,12 +157,11 @@ _to be replaced_
 
 ## Web Browser
 
-_to be replaced_
-
-| | Firefox | Arc |
+| | Zen Browser | Arc |
 | :- | :-: | :-: |
-| Web page | ![Firefox web page](/screenshots/web_firefox_webpage.png 'Firefox web page') | ![Arc web page](/screenshots/web_arc_webpage.png 'Arc web page') |
-| New tab page | ![Firefox new tab page](/screenshots/web_firefox_newtab.png 'Firefox new tab page') | ![Arc new tab page](/screenshots/web_arc_newtab.png 'Arc new tab page') |
+| Web page | ![Zen Browser web page](/screenshots/zenbrowser_webpage.png 'Zen Browser web page') | ![Arc web page](/screenshots/arc_webpage.png 'Arc web page') |
+| Split screen | ![Zen Browser split screen](/screenshots/zenbrowser_splitscreen.png 'Zen Browser split screen') | ![Arc split screen](/screenshots/arc_splitscreen.png 'Arc split screen') |
+| New tab page | ![Zen Browser new tab page](/screenshots/zenbrowser_newtab.png 'Zen Browser new tab page') | ![Arc new tab page](/screenshots/arc_newtab.png 'Arc new tab page') |
 
 ### [Zen Browser](https://zen-browser.app/download)
 
