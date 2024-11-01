@@ -81,7 +81,7 @@ case "$1" in
 "Photo Booth")
 	RESULT=$ICON_CAMERA
 	;;
-"Safari" | "Beam" | "DuckDuckGo" | "Arc" | "Microsoft Edge" | "Google Chrome" | "Firefox")
+"Safari" | "Beam" | "DuckDuckGo" | "Arc" | "Microsoft Edge" | "Google Chrome" | "Firefox" | "Zen Browser")
 	RESULT=$ICON_WEB
 	;;
 "System Settings" | "System Information" | "TinkerTool")
