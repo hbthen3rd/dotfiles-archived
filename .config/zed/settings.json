@@ -11,11 +11,19 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_family": "SF Pro",
+  "ui_font_size": 12,
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Gruvbox Light Hard",
     "dark": "Gruvbox Dark Hard"
+  },
+  "buffer_font_family": "Cascadia Code",
+  "buffer_font_size": 12,
+  "terminal": {
+    "blinking": "on",
+    "cursor_shape": "bar",
+    "font_family": "CaskaydiaCove Nerd Font",
+    "font_size": 12
   }
 }
