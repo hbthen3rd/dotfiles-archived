@@ -140,15 +140,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [Gruvbox Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox)
   - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
   - [Fluent Icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
-  - [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension)
-    - Allow VSCode to modify itself:
-      ```bash
-      sudo chown -R $(whoami) $(which code)
-      sudo chown -R $(whoami) /Applications/Visual Studio Code.app/Contents/Resources/app/out
-      ```
   - Apply [`settings.json`](/manual-application/VSCode/settings.json)
-  - Open Command Palette by pressing `cmd` + `shift` + `P` > enter `Enable Apc extension` > hit `return`
-  - Quit and restart VSCode
 
 ## Source Control
 
