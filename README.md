@@ -164,6 +164,13 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 | New tab page | ![Zen Browser new tab page](/screenshots/zenbrowser_newtab.png 'Zen Browser new tab page') | ![Arc new tab page](/screenshots/arc_newtab.png 'Arc new tab page') |
 
 ### [Zen Browser](https://zen-browser.app/download)
+  - [SuperPins](https://zen-browser.app/mods/ad97bb70-0066-4e42-9b5f-173a5e42c6fc)
+    - Makes pinned tabs look similar to Essentials (icon only in a grid)
+    - Adds a background to the pinned tabs
+  - [Now playing indicator](https://zen-browser.app/mods/2e3369c7-e450-46ba-8794-75ccb0de5e48)
+  - [sleek border](https://zen-browser.app/mods/bc25808c-a012-4c0d-ad9a-aa86be616019)
+  - [Floating Status Bar](https://zen-browser.app/mods/906c6915-5677-48ff-9bfc-096a02a72379)
+  - [Collapsed Tab X Button](https://zen-browser.app/mods/49dbaa98-06ee-42bd-9a8e-834babef7a41)
 
 ### [Arc](https://arc.net/)
 
