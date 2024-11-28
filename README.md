@@ -167,7 +167,6 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [Now playing indicator](https://zen-browser.app/mods/2e3369c7-e450-46ba-8794-75ccb0de5e48)
   - [sleek border](https://zen-browser.app/mods/bc25808c-a012-4c0d-ad9a-aa86be616019)
   - [Floating Status Bar](https://zen-browser.app/mods/906c6915-5677-48ff-9bfc-096a02a72379)
-  - [Collapsed Tab X Button](https://zen-browser.app/mods/49dbaa98-06ee-42bd-9a8e-834babef7a41)
 
 ### [Arc](https://arc.net/)
 
