@@ -91,8 +91,10 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
+  export PAGER='most'
 else
   export EDITOR='nvim'
+  export PAGER='most'
 fi
 
 # Compilation flags
@@ -112,6 +114,7 @@ alias grep="rg"
 alias ls="eza --icons"
 alias ps="procs"
 alias vim="nvim"
+alias less="most"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
