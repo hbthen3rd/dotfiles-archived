@@ -1,3 +1,7 @@
+# Abandoned / Unmaintained
+
+**_I no longer use / maintain this dotfiles repo, please check out my new dotfiles repo: https://github.com/hbthen3rd/dotfiles_**
+
 # hb's dotfiles
 
 _Notes: this repo contains submodules, use `--recurse-submodules` when cloning this repo to get all the modules:_
